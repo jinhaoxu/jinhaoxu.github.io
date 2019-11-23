@@ -287,41 +287,15 @@
           <h3 id="1-写在前面"><a href="#1-写在前面" class="headerlink" title="1.写在前面"></a>1.写在前面</h3><p>Excel表作为日常工作中经常使用的工具之一，可以用来统计数据、数据分析和可视化数据。Excel有很多强大的功能和函数，但日常数据分析用的最多的函数和功能就是:vlookup、sum、if、sumif和数据透视表。基本可以说，如果掌握了这“4+1”的用法，你的Excel熟练程度已经超过80%的办公室白领。</p>
 <p>为了让自己更熟练的掌握着“4+1”的用法，所以我就打算分三篇文章对它们的常用方法和场景进行描述，希望对你有些帮助。 :p)</p>
 <p>第一篇是vlookup函数的介绍和常用方法，第二篇是对常用函数sum、if、sumif介绍和应用场景，第三篇则是介绍数据透视表的使用方法。</p>
-<p>OK，正文开始。</p>
-<h3 id="2-vlookup函数的介绍"><a href="#2-vlookup函数的介绍" class="headerlink" title="2.vlookup函数的介绍"></a>2.vlookup函数的介绍</h3><p>先看看vlookup函数长啥样</p>
-<p><strong>VLOOKUP(lookup_value,table_array,col_index_num,range_lookup)</strong></p>
-<p>在这一最简单的形式中，VLOOKUP 函数表示：</p>
-<p>= VLOOKUP (你想要查找的内容, 要查找的位置, 包含要返回的值的区域中的列号, 返回近似或精确匹配-表示为 1/TRUE 或 0/FALSE)。</p>
-<p>是不是觉得好难理解，换成人话是这样子的：</p>
-<p><strong>=VLOOKUP（你愁啥，向哪儿瞅，瞅着了是卸胳膊还是卸腿，来真格的还是扯犊子）</strong></p>
-<p>由此可见，你需要四条信息才能构建VLOOKUP语法：</p>
-<p>1.Lookup_value:要查找的值，也被称为查阅值。</p>
-<p>2.table_array:查阅值所在的区域，记住，<strong>查阅值应该始终位于所在区域的第一列</strong>，这样VLOOKUP才能正常工作，例如，如果查阅值位于单元格 C2 内，那么您的区域应该以 C2 开头。</p>
-<p>3.col_index_num:区域中包含返回值的列号，例如, 如果指定 B2: D11 作为区域, 则应将 B 作为第一列, 将 C 作为第二列进行计数, 依此类推。</p>
-<p>4.range_lookup:（可选）如果需要返回值的近似匹配，可以指定 1或TRUE；如果需要返回值的精确匹配，则指定 0或FALSE。 如果没有指定任何内容，默认值将始终为 TRUE 或近似匹配。<strong>一般情况下，都会指定为0（FALSE）。如果 range_lookup 为 TRUE 或被省略，则必须按升序排列 table_array 第一列中的值；否则，VLOOKUP可能无法返回正确的值。</strong></p>
-<h3 id="3-vlookup函数的例子"><a href="#3-vlookup函数的例子" class="headerlink" title="3.vlookup函数的例子"></a>3.vlookup函数的例子</h3><p><strong>CASE1：基础单条件查找</strong></p>
-<p>基础单条件查找是vlookup函数最简单的应用，只有单个查阅值，直接使用普通公式就可以解决。如下图：</p>
-<p><img src="https://i.imgur.com/swr6oTH.png" alt="VLOOKUP单条件查询"></p>
-<p><strong>CASE2：反向查找</strong></p>
-<p>但是，如果当待查找列在原检索区域中不是第1列怎么办？这时就需要重新构造一个序列，使得待查找序列在检索区域中的第1列。如下图所示：</p>
-<p><img src="https://i.imgur.com/kBBnoLW.png" alt="VLOOKUP反向查询"></p>
-<blockquote>
-<p>要明确的是，这不是一个普通公式，而是一个含有数组的公式。因此在输入完公式后，需要按下Ctrl+Shift+Enter。这样Excel会自动在公式的前后加上大括号，表明这是一个数组公式，不然可能会计算错误。</p>
-</blockquote>
-<p>总结一下，反向查找的固定用法：</p>
-<p><strong>=VLOOKUP(检索关键字, IF({1,0},检索关键字所在列,查找值所在列),2,0)</strong></p>
-<p><em>有关If函数和{1,0}常数序列可参考这里：<a href="https://zhidao.baidu.com/question/157196925.html" target="_blank" rel="noopener">我是链接</a>。</em></p>
-<p><strong>CASE3：多条件查询</strong></p>
-<p>另外，在使用VLOOKUP匹配数据的时候，查阅值是复合的（多个组装在一起）该怎么办？那么也可以用“&amp;”符号将字段拼接起来，同时利用IF序列公式构建出一个虚拟检索区域。如下图：</p>
-<p><img src="https://i.imgur.com/EGBIhGy.png" alt="VLOOKUP多条件查询"></p>
-<blockquote>
-<p>要明确的是，这不是一个普通公式，而是一个含有数组的公式。因此在输入完公式后，需要按下Ctrl+Shift+Enter。这样Excel会自动在公式的前后加上大括号，表明这是一个数组公式，不然可能会计算错误。</p>
-</blockquote>
-<p>总结一下，反向查找的固定用法：</p>
-<p><strong>=VLOOKUP(关键字1&amp;关键词2,IF({1,0},关键词1所在列&amp;关键词2所在列,查找值所在列)，2,0)</strong></p>
-<h3 id="4-结语"><a href="#4-结语" class="headerlink" title="4.结语###"></a>4.结语###</h3><p>以上就是VLOOKUP函数常见的几个用法，擅用VLOOKUP能让你处理数据事半功倍！</p>
-<p>对于本文有什么问题，欢迎留言~</p>
-
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/11/23/Excel数据分析常用工具(上)——vlookup函数/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
