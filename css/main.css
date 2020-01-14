@@ -1138,7 +1138,7 @@ pre .javascript .function {
 }
 @media (min-width: 1200px) {
   .post-body {
-    font-size: 1.125em;
+    font-size: $font-size;
   }
 }
 @media (max-width: 767px) {
@@ -1674,7 +1674,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #90ab8b;
+  background: #66a8d4;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
