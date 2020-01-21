@@ -55,22 +55,22 @@
   };
 </script>
 
-  <meta name="description" content="权限管理的作用SaaS后台系统中，数据具有敏感性，由于工作职责不同，所以用户拥有的权限也不同。因此，系统需要给用户分配权限，使得用户在规定范围内使用系统。 RBAC模型介绍本文介绍的RBAC模型是一个模型族，它包含了RBAC0~RBAC3四个概念性模型。  基本模型RBAC0定义了完全支持RBAC概念的任何系统的最低需求。RBAC1和RBAC2两者都包含RBAC0，但各自都增加了独立的特点，它们被">
+  <meta name="description" content="权限管理的作用SaaS后台系统中，数据具有敏感性，由于工作职责不同，所以用户拥有的权限也不同。因此，系统需要给用户分配权限，使得用户在规定范围内使用系统。">
 <meta name="keywords" content="产品经理, PMhome123, PM, 产品需求, 互联网产品经理, 人人都是产品经理">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SaaS后台经验分享:如何设计权限管理">
 <meta property="og:url" content="https://pmhome123.com/2020/01/21/SaaS后台经验分享-如何设计权限管理/index.html">
 <meta property="og:site_name" content="PMhome123">
-<meta property="og:description" content="权限管理的作用SaaS后台系统中，数据具有敏感性，由于工作职责不同，所以用户拥有的权限也不同。因此，系统需要给用户分配权限，使得用户在规定范围内使用系统。 RBAC模型介绍本文介绍的RBAC模型是一个模型族，它包含了RBAC0~RBAC3四个概念性模型。  基本模型RBAC0定义了完全支持RBAC概念的任何系统的最低需求。RBAC1和RBAC2两者都包含RBAC0，但各自都增加了独立的特点，它们被">
+<meta property="og:description" content="权限管理的作用SaaS后台系统中，数据具有敏感性，由于工作职责不同，所以用户拥有的权限也不同。因此，系统需要给用户分配权限，使得用户在规定范围内使用系统。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/6183499-6f02f98b998527b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/6183499-def3c72c2f521122.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/6183499-4624f4b6f628fe1c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2020-01-21T06:46:23.718Z">
+<meta property="og:image" content="https://i.imgur.com/p6VQdhv.png">
+<meta property="og:image" content="https://i.imgur.com/T80dtF0.png">
+<meta property="og:image" content="https://i.imgur.com/ibMZCyW.png">
+<meta property="og:updated_time" content="2020-01-21T07:06:57.828Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SaaS后台经验分享:如何设计权限管理">
-<meta name="twitter:description" content="权限管理的作用SaaS后台系统中，数据具有敏感性，由于工作职责不同，所以用户拥有的权限也不同。因此，系统需要给用户分配权限，使得用户在规定范围内使用系统。 RBAC模型介绍本文介绍的RBAC模型是一个模型族，它包含了RBAC0~RBAC3四个概念性模型。  基本模型RBAC0定义了完全支持RBAC概念的任何系统的最低需求。RBAC1和RBAC2两者都包含RBAC0，但各自都增加了独立的特点，它们被">
-<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/6183499-6f02f98b998527b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:description" content="权限管理的作用SaaS后台系统中，数据具有敏感性，由于工作职责不同，所以用户拥有的权限也不同。因此，系统需要给用户分配权限，使得用户在规定范围内使用系统。">
+<meta name="twitter:image" content="https://i.imgur.com/p6VQdhv.png">
   <link rel="canonical" href="https://pmhome123.com/2020/01/21/SaaS后台经验分享-如何设计权限管理/">
 
 
@@ -288,6 +288,7 @@
 
       
         <h5 id="权限管理的作用"><a href="#权限管理的作用" class="headerlink" title="权限管理的作用"></a>权限管理的作用</h5><p>SaaS后台系统中，数据具有敏感性，由于工作职责不同，所以用户拥有的权限也不同。因此，系统需要给用户分配权限，使得用户在规定范围内使用系统。</p>
+<a id="more"></a>
 <h5 id="RBAC模型介绍"><a href="#RBAC模型介绍" class="headerlink" title="RBAC模型介绍"></a>RBAC模型介绍</h5><p>本文介绍的RBAC模型是一个模型族，它包含了RBAC0~RBAC3四个概念性模型。</p>
 <ol>
 <li>基本模型RBAC0定义了完全支持RBAC概念的任何系统的最低需求。RBAC1和RBAC2两者都包含RBAC0，但各自都增加了独立的特点，它们被称为高级模型。</li>
@@ -296,7 +297,9 @@
 <li>RBAC3称为统一模型，它包含了RBAC1和RBAC2，利用传递性，也把RBAC0包括在内。这些模型构成了RBAC模型族。</li>
 </ol>
 <p>本文主要介绍RBAC0模型，虽然是最基础、最核心的权限模型，但只要学习理解了其中的思想，便可以设计RBAC1~3的模型了；</p>
-<h5 id="RABC0的设计"><a href="#RABC0的设计" class="headerlink" title="RABC0的设计"></a>RABC0的设计</h5><p>RBAC（Role-Based Access Control ）意为基于角色的访问控制，角色是权限集合，通过给用户分配权限达到控制访问的目的。<br><img src="https://upload-images.jianshu.io/upload_images/6183499-6f02f98b998527b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="RBAC0示意图"><br>RBAC认为权限的过程可以抽象概括为：判断【Who是否可以对What进行How的访问操作（Operator）】这个逻辑表达式的值是否为True的求解过程。</p>
+<h5 id="RABC0的设计"><a href="#RABC0的设计" class="headerlink" title="RABC0的设计"></a>RABC0的设计</h5><p>RBAC（Role-Based Access Control ）意为基于角色的访问控制，角色是权限集合，通过给用户分配权限达到控制访问的目的。</p>
+<p><img src="https://i.imgur.com/p6VQdhv.png" alt="权限设计"></p>
+<p>RBAC认为权限的过程可以抽象概括为：判断【Who是否可以对What进行How的访问操作（Operator）】这个逻辑表达式的值是否为True的求解过程。</p>
 <p>即将权限问题转换为Who、What、How的问题，因此我们需要定义的是角色、资源和行为。</p>
 <p>比如我们需要考虑：</p>
 <ul>
@@ -310,10 +313,11 @@
 </ul>
 <p>下面主要说一下Who，What，How的定义。</p>
 <h6 id="1-定义角色（Who）"><a href="#1-定义角色（Who）" class="headerlink" title="1.定义角色（Who）######"></a>1.定义角色（Who）######</h6><p>前期需要进行用户访谈，了解不同岗位的用户的工作职责，并抽象出几个角色。</p>
-<p>然后，用户与角色之间的关系需要明确是“多对一”还是“多对多”。这个问题需要结合业务场景进行讨论，如果用户的工作职责界限分明、不同工作岗位都有专门员工，那么此时可以设计成“多对一”，即用户只有一个角色，一个角色可以对应多个用户；<br><img src="https://upload-images.jianshu.io/upload_images/6183499-def3c72c2f521122.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="用户与角色“多对一”"></p>
-<p>如果某些用户的工作内容跨越几个职能，则可以设计成“多对多”，即一个用户可拥有多个角色，一个角色也可对应多个用户。<br><img src="https://upload-images.jianshu.io/upload_images/6183499-4624f4b6f628fe1c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="用户与角色“多对多”"></p>
+<p>然后，用户与角色之间的关系需要明确是“多对一”还是“多对多”。这个问题需要结合业务场景进行讨论，如果用户的工作职责界限分明、不同工作岗位都有专门员工，那么此时可以设计成“多对一”，即用户只有一个角色，一个角色可以对应多个用户；<br><img src="https://i.imgur.com/T80dtF0.png" alt="权限设计"></p>
+<p>如果某些用户的工作内容跨越几个职能，则可以设计成“多对多”，即一个用户可拥有多个角色，一个角色也可对应多个用户。</p>
+<p><img src="https://i.imgur.com/ibMZCyW.png" alt="权限设计"></p>
 <p>这里还需注意的是，为了系统的灵活性，角色的权限应是可编辑的，管理员可以创建角色，并对角色的权限进行修改以应对工作场景的变化。</p>
-<h6 id="2-定义资源（What）"><a href="#2-定义资源（What）" class="headerlink" title="2.定义资源（What）######"></a>2.定义资源（What）######</h6><p>资源包括功能和数据。<br>定义<strong>功能</strong>时需要明确，功能权限到页面级别还是操作级别。在一些权限严格的业务场景，比如电商ERP中，则会要求定义到操作级别，比如销售报表导出按钮，计算毛利率按钮等；如果权限比较宽松的，则可能只到页面级别，比如该角色是否能访问订单列表等等。这些都需要根据业务需求决定。</p>
+<h6 id="2-定义资源（What）"><a href="#2-定义资源（What）" class="headerlink" title="2.定义资源（What）"></a>2.定义资源（What）</h6><p>资源包括功能和数据。<br>定义<strong>功能</strong>时需要明确，功能权限到页面级别还是操作级别。在一些权限严格的业务场景，比如电商ERP中，则会要求定义到操作级别，比如销售报表导出按钮，计算毛利率按钮等；如果权限比较宽松的，则可能只到页面级别，比如该角色是否能访问订单列表等等。这些都需要根据业务需求决定。</p>
 <p>定义<strong>数据</strong>时则比较简单，可以根据该角色绑定的店铺或区域来限制用户的数据权限，比如美国运营专员只绑定美国区的，则只能获取美国区的数据。</p>
 <h6 id="3-定义行为（How）"><a href="#3-定义行为（How）" class="headerlink" title="3.定义行为（How）"></a>3.定义行为（How）</h6><p>行为包括增删查改。不同的角色可根据需要设置不同的操作权限，比如对于同样的成绩管理页面，学生只能查看成绩，不能修改成绩；但教师同时拥有修改成绩和查看成绩的功能。</p>
 
@@ -393,7 +397,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#权限管理的作用"><span class="nav-number">1.</span> <span class="nav-text">权限管理的作用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#RBAC模型介绍"><span class="nav-number">2.</span> <span class="nav-text">RBAC模型介绍</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#RABC0的设计"><span class="nav-number">3.</span> <span class="nav-text">RABC0的设计</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1-定义角色（Who）"><span class="nav-number">3.1.</span> <span class="nav-text">1.定义角色（Who）######</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-定义资源（What）"><span class="nav-number">3.2.</span> <span class="nav-text">2.定义资源（What）######</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-定义行为（How）"><span class="nav-number">3.3.</span> <span class="nav-text">3.定义行为（How）</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#权限管理的作用"><span class="nav-number">1.</span> <span class="nav-text">权限管理的作用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#RBAC模型介绍"><span class="nav-number">2.</span> <span class="nav-text">RBAC模型介绍</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#RABC0的设计"><span class="nav-number">3.</span> <span class="nav-text">RABC0的设计</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1-定义角色（Who）"><span class="nav-number">3.1.</span> <span class="nav-text">1.定义角色（Who）######</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-定义资源（What）"><span class="nav-number">3.2.</span> <span class="nav-text">2.定义资源（What）</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-定义行为（How）"><span class="nav-number">3.3.</span> <span class="nav-text">3.定义行为（How）</span></a></li></ol></li></ol></div>
         
       </div>
       <!--/noindex-->
