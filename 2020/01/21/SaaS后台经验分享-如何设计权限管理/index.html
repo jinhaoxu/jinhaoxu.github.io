@@ -55,25 +55,23 @@
   };
 </script>
 
-  <meta name="description" content="背景借着这次出差云南的机会，我参观了西南联大的旧址，虽然是“走马观花”式游览，但也有一点体会。">
-<meta name="keywords" content="随记">
+  <meta name="description" content="权限管理的作用SaaS后台系统中，数据具有敏感性，由于工作职责不同，所以用户拥有的权限也不同。因此，系统需要给用户分配权限，使得用户在规定范围内使用系统。 RBAC模型介绍本文介绍的RBAC模型是一个模型族，它包含了RBAC0~RBAC3四个概念性模型。  基本模型RBAC0定义了完全支持RBAC概念的任何系统的最低需求。RBAC1和RBAC2两者都包含RBAC0，但各自都增加了独立的特点，它们被">
+<meta name="keywords" content="产品经理, PMhome123, PM, 产品需求, 互联网产品经理, 人人都是产品经理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="西南联大">
-<meta property="og:url" content="https://pmhome123.com/2019/12/22/西南联大与12-01事件/index.html">
+<meta property="og:title" content="SaaS后台经验分享:如何设计权限管理">
+<meta property="og:url" content="https://pmhome123.com/2020/01/21/SaaS后台经验分享-如何设计权限管理/index.html">
 <meta property="og:site_name" content="PMhome123">
-<meta property="og:description" content="背景借着这次出差云南的机会，我参观了西南联大的旧址，虽然是“走马观花”式游览，但也有一点体会。">
+<meta property="og:description" content="权限管理的作用SaaS后台系统中，数据具有敏感性，由于工作职责不同，所以用户拥有的权限也不同。因此，系统需要给用户分配权限，使得用户在规定范围内使用系统。 RBAC模型介绍本文介绍的RBAC模型是一个模型族，它包含了RBAC0~RBAC3四个概念性模型。  基本模型RBAC0定义了完全支持RBAC概念的任何系统的最低需求。RBAC1和RBAC2两者都包含RBAC0，但各自都增加了独立的特点，它们被">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://i.imgur.com/rYgAQa1.jpg">
-<meta property="og:image" content="https://i.imgur.com/o4cokLr.jpg">
-<meta property="og:image" content="https://i.imgur.com/gqK2450.jpg">
-<meta property="og:image" content="https://i.imgur.com/lLuBnzE.jpg">
-<meta property="og:image" content="https://i.imgur.com/rEFaIiQ.jpg">
-<meta property="og:updated_time" content="2020-01-21T02:11:18.218Z">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/6183499-6f02f98b998527b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/6183499-def3c72c2f521122.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/6183499-4624f4b6f628fe1c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2020-01-21T06:46:23.718Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="西南联大">
-<meta name="twitter:description" content="背景借着这次出差云南的机会，我参观了西南联大的旧址，虽然是“走马观花”式游览，但也有一点体会。">
-<meta name="twitter:image" content="https://i.imgur.com/rYgAQa1.jpg">
-  <link rel="canonical" href="https://pmhome123.com/2019/12/22/西南联大与12-01事件/">
+<meta name="twitter:title" content="SaaS后台经验分享:如何设计权限管理">
+<meta name="twitter:description" content="权限管理的作用SaaS后台系统中，数据具有敏感性，由于工作职责不同，所以用户拥有的权限也不同。因此，系统需要给用户分配权限，使得用户在规定范围内使用系统。 RBAC模型介绍本文介绍的RBAC模型是一个模型族，它包含了RBAC0~RBAC3四个概念性模型。  基本模型RBAC0定义了完全支持RBAC概念的任何系统的最低需求。RBAC1和RBAC2两者都包含RBAC0，但各自都增加了独立的特点，它们被">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/6183499-6f02f98b998527b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+  <link rel="canonical" href="https://pmhome123.com/2020/01/21/SaaS后台经验分享-如何设计权限管理/">
 
 
 <script id="page-configurations">
@@ -87,7 +85,7 @@
   };
 </script>
 
-  <title>西南联大 | PMhome123</title>
+  <title>SaaS后台经验分享:如何设计权限管理 | PMhome123</title>
   
 
 
@@ -238,7 +236,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="https://pmhome123.com/2019/12/22/西南联大与12-01事件/">
+    <link itemprop="mainEntityOfPage" href="https://pmhome123.com/2020/01/21/SaaS后台经验分享-如何设计权限管理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="PMhome123">
@@ -250,7 +248,7 @@
       <meta itemprop="name" content="PMhome123">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">西南联大
+        <h1 class="post-title" itemprop="name headline">SaaS后台经验分享:如何设计权限管理
 
           
         </h1>
@@ -266,7 +264,7 @@
                 
               
 
-              <time title="创建时间：2019-12-22 20:05:53" itemprop="dateCreated datePublished" datetime="2019-12-22T20:05:53+08:00">2019-12-22</time>
+              <time title="创建时间：2020-01-21 14:27:06" itemprop="dateCreated datePublished" datetime="2020-01-21T14:27:06+08:00">2020-01-21</time>
             </span>
           
 
@@ -289,36 +287,35 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h4 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h4><p>借着这次出差云南的机会，我参观了西南联大的旧址，虽然是“走马观花”式游览，但也有一点体会。</p>
-<a id="more"></a>
-
-<blockquote>
-<p>这是西南联大的百科知识。<a href="https://zh.wikipedia.org/wiki/%E5%9B%BD%E7%AB%8B%E8%A5%BF%E5%8D%97%E8%81%94%E5%90%88%E5%A4%A7%E5%AD%A6" title="西南联大百科链接" target="_blank" rel="noopener">百科链接</a>。</p>
-</blockquote>
-<p>在印象中，西南联大是我认为迄今为止中国最厉害的大学，汇聚了当时国内顶尖的学术泰斗，如梅贻琦、蒋梦麟、张伯苓、陈寅格、冯友兰、闻一多等；与此同时，西南联大的学生也是非常优秀，后来出了8位两弹一星元勋、171位中国科学院或中国工程院院士、2位诺贝尔得奖主和1位沃尔夫数学得奖主。在当时艰苦的抗战条件下，全体师生刻苦认真学习、发奋图强、报效国家的精神让我非常敬佩，所以就去参观了一下西南联大的旧址。</p>
-<blockquote>
-<p>在抗战胜利后，西南联大中北京大学、清华大学和南开大学搬回旧址，师范学院留在昆明独立设院，改成昆明师范学院，后改名云南师范大学。</p>
-</blockquote>
-<h4 id="游览西南联大旧址"><a href="#游览西南联大旧址" class="headerlink" title="游览西南联大旧址"></a>游览西南联大旧址</h4><p>骑了差不多半个钟的单车，我总算到云南师范大学门口了。先给校门拍个照。</p>
-<p><img src="https://i.imgur.com/rYgAQa1.jpg" alt="云南师范大学正门"></p>
-<p>从校门也可以看到，西南联大的历史也是云南师范大学的骄傲。</p>
-<p>从校门进去，直走几百米，往右可以看到，立着闻一多先生的雕像，以纪念闻一多在西南联大组织的爱国民主运动。</p>
-<p><img src="https://i.imgur.com/o4cokLr.jpg" alt="闻一多"></p>
-<p>经过雕像往左拐，就可以看到，西南联大的门碑。</p>
-<p><img src="https://i.imgur.com/gqK2450.jpg" alt="西南联大校门"></p>
-<p>门碑上的字遒劲有力，仿佛能体会到当时众多师生们在艰苦条件下顽强的意志和生命力。</p>
-<p>这是当时学生上课的教室，可以看到当时的教学环境多么艰苦。</p>
-<p><img src="https://i.imgur.com/lLuBnzE.jpg" alt="西南联大教室"><br><img src="https://i.imgur.com/rEFaIiQ.jpg" alt="西南联大教室2"></p>
-<p>铁皮、茅草搭成的教室，非常简陋，遇上恶劣天气，还会出现“外面下大雨，里面下小雨”的情况，但当时的教授和学生能排除外在因素的影响，继续上课，这般精神对于当代的大学生而言是一种榜样。</p>
-<h4 id="震惊"><a href="#震惊" class="headerlink" title="震惊"></a>震惊</h4><p>我在参观过程中了解到“西南联大12-01事件”，从碑文上记录的过程来看，当时国民政府对于学生的爱国民主运动进行的武力镇压，发生了流血事件，造成了4人死亡、29人重伤、多人轻伤的后果，我感到非常震惊。不满足于碑文上的记载，我上网搜索了相关的历史资料。</p>
-<h5 id="西南联大12-01事件"><a href="#西南联大12-01事件" class="headerlink" title="西南联大12-01事件"></a>西南联大12-01事件</h5><p>11月25日晚，昆明几个学生自治会在西南联合大学举行时事晚会，到会者达6000多人，民主战士吴晗、周新民、闻一多参加了讨论会，钱端升、伍启元、费孝通、潘大逵四教授就和平民主、联合政府等问题作了讲演。演说正进行时，包围会场的国民党军队突然用冲锋枪、机关枪、小钢炮对会场上空射击，进行恐吓。</p>
-<p>次日，昆明3万学生为反对内战和抗议军警暴行宣布总罢课，提出立即停止内战、撤退驻华美军、保障人民民主权利、建立民主的联合政府等口号。学生组织了100多个宣传队上街宣传，遭到国民党特务的殴打和追捕，许多学生受伤。十二月一日，大批国民党特务和军人分途围攻西南联大和云南大学等校，毒打学生和教师，并向学生集中的地方投掷手榴弹，炸死西南联大（现云南师范大学的前身）学生潘琰、李鲁连，昆华工校学生张华昌，南菁中学青年教师于再等4人，重伤29人，轻伤30多人， 造成了震惊全国的“一二一惨案”。</p>
-<p>惨案发生后，昆明3万多师生立即掀起更大规模的反内战、争民主运动。在继续坚持罢课的同时，每天出动100多个宣传队到街头、工厂和郊区农村宣传。从12月2日起，昆明为四烈士举行公祭。一个半月中，参加公祭的各界人士有15万人，近700个团体。全国各地学生纷纷举行集会游行，声援昆明学生的正义斗争。全国学生和昆明市民对昆明学生的支持和声援，有力地打击了国民党反动派的气焰，迫使国民党“公审”并枪决了杀害学生的凶手，并免去了国民党云南省党部主任委员、代理省主席李宗黄的职务。</p>
-<h5 id="后续发展和政府态度"><a href="#后续发展和政府态度" class="headerlink" title="后续发展和政府态度"></a>后续发展和政府态度</h5><p>121事件后，政府没敢进一步镇压。炸死4个人的惨案震惊全国，社会舆论及民办报纸一片谴责声，12月2日为四烈士公祭，一个半月中，参加公祭人员有15万，700多个团体。全国各地学生纷纷集会游行示威声援。</p>
-<p>121事件后，政府为平息民愤安抚人心，把监狱里的几个死囚犯，拉出来当杀人凶手加以公审枪毙。撤销李宗黄的云南省代主席云南省党部主委职务。</p>
-<h4 id="感慨"><a href="#感慨" class="headerlink" title="感慨"></a>感慨</h4><p>近代中国学生不是缺乏民主、爱国意识，反而是最积极去争取人权、民主和自由的一类人，众多学子都抱希望于游行示威、集会演讲对执政者施压，但是执政者对于学生们的诉求却不予理睬，反而是通过极端的武力手段去镇压学生运动，如“手榴弹投向人群”、“坦克碾压”等。</p>
-<p>似乎执政者都认为学生是最好“欺负”的、最没有“反抗能力”的人，所以便喜欢用简单、粗暴的手段解决。这也导致中国的大多数学生慢慢的丧失了批判性思维，习惯于“服从”，习惯“安稳”，争取权利反倒是被打上“暴徒”的标签。</p>
-<p>悲呼！</p>
+        <h5 id="权限管理的作用"><a href="#权限管理的作用" class="headerlink" title="权限管理的作用"></a>权限管理的作用</h5><p>SaaS后台系统中，数据具有敏感性，由于工作职责不同，所以用户拥有的权限也不同。因此，系统需要给用户分配权限，使得用户在规定范围内使用系统。</p>
+<h5 id="RBAC模型介绍"><a href="#RBAC模型介绍" class="headerlink" title="RBAC模型介绍"></a>RBAC模型介绍</h5><p>本文介绍的RBAC模型是一个模型族，它包含了RBAC0~RBAC3四个概念性模型。</p>
+<ol>
+<li>基本模型RBAC0定义了完全支持RBAC概念的任何系统的最低需求。RBAC1和RBAC2两者都包含RBAC0，但各自都增加了独立的特点，它们被称为高级模型。</li>
+<li>RBAC1中增加了角色分级的概念，一个角色可以从另一个角色继承许可权。</li>
+<li>RBAC2中增加了一些限制，强调在RBAC的不同组件中在配置方面的一些限制。</li>
+<li>RBAC3称为统一模型，它包含了RBAC1和RBAC2，利用传递性，也把RBAC0包括在内。这些模型构成了RBAC模型族。</li>
+</ol>
+<p>本文主要介绍RBAC0模型，虽然是最基础、最核心的权限模型，但只要学习理解了其中的思想，便可以设计RBAC1~3的模型了；</p>
+<h5 id="RABC0的设计"><a href="#RABC0的设计" class="headerlink" title="RABC0的设计"></a>RABC0的设计</h5><p>RBAC（Role-Based Access Control ）意为基于角色的访问控制，角色是权限集合，通过给用户分配权限达到控制访问的目的。<br><img src="https://upload-images.jianshu.io/upload_images/6183499-6f02f98b998527b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="RBAC0示意图"><br>RBAC认为权限的过程可以抽象概括为：判断【Who是否可以对What进行How的访问操作（Operator）】这个逻辑表达式的值是否为True的求解过程。</p>
+<p>即将权限问题转换为Who、What、How的问题，因此我们需要定义的是角色、资源和行为。</p>
+<p>比如我们需要考虑：</p>
+<ul>
+<li>系统有哪些用户，可以分为哪些角色；</li>
+<li>系统有哪些功能（资源）需要按权限来划分；</li>
+<li>功能（资源）的拆分粒度，到页面还是到具体按钮操作；</li>
+<li>新用户的默认角色和权限；</li>
+<li>用户与角色是“多对一”还是“多对多”；</li>
+<li>新增的功能是默认全部角色“可用”还是“不可用”；</li>
+<li>……<br>这些都是比较细节的问题，我们在设计功能时需要考虑。</li>
+</ul>
+<p>下面主要说一下Who，What，How的定义。</p>
+<h6 id="1-定义角色（Who）"><a href="#1-定义角色（Who）" class="headerlink" title="1.定义角色（Who）######"></a>1.定义角色（Who）######</h6><p>前期需要进行用户访谈，了解不同岗位的用户的工作职责，并抽象出几个角色。</p>
+<p>然后，用户与角色之间的关系需要明确是“多对一”还是“多对多”。这个问题需要结合业务场景进行讨论，如果用户的工作职责界限分明、不同工作岗位都有专门员工，那么此时可以设计成“多对一”，即用户只有一个角色，一个角色可以对应多个用户；<br><img src="https://upload-images.jianshu.io/upload_images/6183499-def3c72c2f521122.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="用户与角色“多对一”"></p>
+<p>如果某些用户的工作内容跨越几个职能，则可以设计成“多对多”，即一个用户可拥有多个角色，一个角色也可对应多个用户。<br><img src="https://upload-images.jianshu.io/upload_images/6183499-4624f4b6f628fe1c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="用户与角色“多对多”"></p>
+<p>这里还需注意的是，为了系统的灵活性，角色的权限应是可编辑的，管理员可以创建角色，并对角色的权限进行修改以应对工作场景的变化。</p>
+<h6 id="2-定义资源（What）"><a href="#2-定义资源（What）" class="headerlink" title="2.定义资源（What）######"></a>2.定义资源（What）######</h6><p>资源包括功能和数据。<br>定义<strong>功能</strong>时需要明确，功能权限到页面级别还是操作级别。在一些权限严格的业务场景，比如电商ERP中，则会要求定义到操作级别，比如销售报表导出按钮，计算毛利率按钮等；如果权限比较宽松的，则可能只到页面级别，比如该角色是否能访问订单列表等等。这些都需要根据业务需求决定。</p>
+<p>定义<strong>数据</strong>时则比较简单，可以根据该角色绑定的店铺或区域来限制用户的数据权限，比如美国运营专员只绑定美国区的，则只能获取美国区的数据。</p>
+<h6 id="3-定义行为（How）"><a href="#3-定义行为（How）" class="headerlink" title="3.定义行为（How）"></a>3.定义行为（How）</h6><p>行为包括增删查改。不同的角色可根据需要设置不同的操作权限，比如对于同样的成绩管理页面，学生只能查看成绩，不能修改成绩；但教师同时拥有修改成绩和查看成绩的功能。</p>
 
     </div>
 
@@ -329,23 +326,14 @@
       
 
       <footer class="post-footer">
-          
-            
-          
-          <div class="post-tags">
-            
-              <a href="/tags/随记/" rel="tag"># 随记</a>
-            
-          </div>
-        
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/12/22/如何设计一份问卷调查表/" rel="next" title="如何设计一份问卷调查表">
-                  <i class="fa fa-chevron-left"></i> 如何设计一份问卷调查表
+                <a href="/2020/01/21/【转】如何制定Roadmap/" rel="next" title="【转】如何制定Roadmap">
+                  <i class="fa fa-chevron-left"></i> 【转】如何制定Roadmap
                 </a>
               
             </div>
@@ -354,8 +342,8 @@
 
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/2020/01/21/B端、C端产品是指什么/" rel="prev" title="B端、C端产品是指什么">
-                  B端、C端产品是指什么 <i class="fa fa-chevron-right"></i>
+                <a href="/2020/01/21/后台产品经理表格设计的那些事儿/" rel="prev" title="后台产品经理表格设计的那些事儿">
+                  后台产品经理表格设计的那些事儿 <i class="fa fa-chevron-right"></i>
                 </a>
               
             </div>
@@ -405,7 +393,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#游览西南联大旧址"><span class="nav-number">2.</span> <span class="nav-text">游览西南联大旧址</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#震惊"><span class="nav-number">3.</span> <span class="nav-text">震惊</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#西南联大12-01事件"><span class="nav-number">3.1.</span> <span class="nav-text">西南联大12-01事件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#后续发展和政府态度"><span class="nav-number">3.2.</span> <span class="nav-text">后续发展和政府态度</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#感慨"><span class="nav-number">4.</span> <span class="nav-text">感慨</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#权限管理的作用"><span class="nav-number">1.</span> <span class="nav-text">权限管理的作用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#RBAC模型介绍"><span class="nav-number">2.</span> <span class="nav-text">RBAC模型介绍</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#RABC0的设计"><span class="nav-number">3.</span> <span class="nav-text">RABC0的设计</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1-定义角色（Who）"><span class="nav-number">3.1.</span> <span class="nav-text">1.定义角色（Who）######</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-定义资源（What）"><span class="nav-number">3.2.</span> <span class="nav-text">2.定义资源（What）######</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-定义行为（How）"><span class="nav-number">3.3.</span> <span class="nav-text">3.定义行为（How）</span></a></li></ol></li></ol></div>
         
       </div>
       <!--/noindex-->
