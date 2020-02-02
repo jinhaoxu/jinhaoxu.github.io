@@ -63,14 +63,14 @@
 <meta property="og:site_name" content="PMhome123">
 <meta property="og:description" content="权限管理的作用SaaS后台系统中，数据具有敏感性，由于工作职责不同，所以用户拥有的权限也不同。因此，系统需要给用户分配权限，使得用户在规定范围内使用系统。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/e9fe3ed1gy1gbiekhx7xnj20f008wjrd.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/e9fe3ed1gy1gbiekvgy2xj20hs0a0aa2.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/e9fe3ed1gy1gbielguuk2j20hs0dcdg1.jpg">
-<meta property="og:updated_time" content="2020-02-02T14:01:37.664Z">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/aKbcTZfxVMqujEk.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/MQcjASykZpWIYC6.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/SopdR6YbZAUK9zG.png">
+<meta property="og:updated_time" content="2020-02-02T14:20:04.637Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SaaS后台经验分享:如何设计权限管理">
 <meta name="twitter:description" content="权限管理的作用SaaS后台系统中，数据具有敏感性，由于工作职责不同，所以用户拥有的权限也不同。因此，系统需要给用户分配权限，使得用户在规定范围内使用系统。">
-<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/e9fe3ed1gy1gbiekhx7xnj20f008wjrd.jpg">
+<meta name="twitter:image" content="https://i.loli.net/2020/02/02/aKbcTZfxVMqujEk.png">
   <link rel="canonical" href="https://pmhome123.com/2020/01/21/SaaS后台经验分享-如何设计权限管理/">
 
 
@@ -254,7 +254,7 @@
 </ol>
 <p>本文主要介绍RBAC0模型，虽然是最基础、最核心的权限模型，但只要学习理解了其中的思想，便可以设计RBAC1~3的模型了；</p>
 <h5 id="RABC0的设计"><a href="#RABC0的设计" class="headerlink" title="RABC0的设计"></a>RABC0的设计</h5><p>RBAC（Role-Based Access Control ）意为基于角色的访问控制，角色是权限集合，通过给用户分配权限达到控制访问的目的。</p>
-<p><img src="https://ws1.sinaimg.cn/large/e9fe3ed1gy1gbiekhx7xnj20f008wjrd.jpg" alt="权限设计1.png"></p>
+<p><img src="https://i.loli.net/2020/02/02/aKbcTZfxVMqujEk.png" alt="权限设计1.png"></p>
 <p>RBAC认为权限的过程可以抽象概括为：判断【Who是否可以对What进行How的访问操作（Operator）】这个逻辑表达式的值是否为True的求解过程。</p>
 <p>即将权限问题转换为Who、What、How的问题，因此我们需要定义的是角色、资源和行为。</p>
 <p>比如我们需要考虑：</p>
@@ -269,9 +269,9 @@
 </ul>
 <p>下面主要说一下Who，What，How的定义。</p>
 <h6 id="1-定义角色（Who）"><a href="#1-定义角色（Who）" class="headerlink" title="1.定义角色（Who）"></a>1.定义角色（Who）</h6><p>前期需要进行用户访谈，了解不同岗位的用户的工作职责，并抽象出几个角色。</p>
-<p>然后，用户与角色之间的关系需要明确是“多对一”还是“多对多”。这个问题需要结合业务场景进行讨论，如果用户的工作职责界限分明、不同工作岗位都有专门员工，那么此时可以设计成“多对一”，即用户只有一个角色，一个角色可以对应多个用户；<br><img src="https://ws1.sinaimg.cn/large/e9fe3ed1gy1gbiekvgy2xj20hs0a0aa2.jpg" alt="权限设计2.png"></p>
+<p>然后，用户与角色之间的关系需要明确是“多对一”还是“多对多”。这个问题需要结合业务场景进行讨论，如果用户的工作职责界限分明、不同工作岗位都有专门员工，那么此时可以设计成“多对一”，即用户只有一个角色，一个角色可以对应多个用户；<br><img src="https://i.loli.net/2020/02/02/MQcjASykZpWIYC6.png" alt="权限设计2.png"></p>
 <p>如果某些用户的工作内容跨越几个职能，则可以设计成“多对多”，即一个用户可拥有多个角色，一个角色也可对应多个用户。</p>
-<p><img src="https://ws1.sinaimg.cn/large/e9fe3ed1gy1gbielguuk2j20hs0dcdg1.jpg" alt="权限设计3.png"></p>
+<p><img src="https://i.loli.net/2020/02/02/SopdR6YbZAUK9zG.png" alt="权限设计3.png"></p>
 <p>这里还需注意的是，为了系统的灵活性，角色的权限应是可编辑的，管理员可以创建角色，并对角色的权限进行修改以应对工作场景的变化。</p>
 <h6 id="2-定义资源（What）"><a href="#2-定义资源（What）" class="headerlink" title="2.定义资源（What）"></a>2.定义资源（What）</h6><p>资源包括功能和数据。<br>定义<strong>功能</strong>时需要明确，功能权限到页面级别还是操作级别。在一些权限严格的业务场景，比如电商ERP中，则会要求定义到操作级别，比如销售报表导出按钮，计算毛利率按钮等；如果权限比较宽松的，则可能只到页面级别，比如该角色是否能访问订单列表等等。这些都需要根据业务需求决定。</p>
 <p>定义<strong>数据</strong>时则比较简单，可以根据该角色绑定的店铺或区域来限制用户的数据权限，比如美国运营专员只绑定美国区的，则只能获取美国区的数据。</p>
