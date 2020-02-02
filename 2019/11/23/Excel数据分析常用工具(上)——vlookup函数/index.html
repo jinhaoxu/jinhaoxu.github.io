@@ -63,14 +63,14 @@
 <meta property="og:site_name" content="PMhome123">
 <meta property="og:description" content="写在前面Excel表作为日常工作中经常使用的工具之一，可以用来统计数据、数据分析和可视化数据。Excel有很多强大的功能和函数，但日常数据分析用的最多的函数和功能就是:vlookup、sum、if、sumif和数据透视表。基本可以说，如果掌握了这“4+1”的用法，你的Excel熟练程度已经超过80%的办公室白领。 为了让自己更熟练的掌握着“4+1”的用法，所以我就打算分三篇文章对它们的常用方法和场">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://i.imgur.com/swr6oTH.png">
-<meta property="og:image" content="https://i.imgur.com/kBBnoLW.png">
-<meta property="og:image" content="https://i.imgur.com/EGBIhGy.png">
-<meta property="og:updated_time" content="2020-01-20T06:44:34.205Z">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/fO1eNod2zmA4W7I.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/dEMtpjH1NyeoUGR.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/uAQUcNDq6VodRxv.png">
+<meta property="og:updated_time" content="2020-02-02T15:41:13.608Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Excel数据分析常用工具(上)——vlookup函数">
 <meta name="twitter:description" content="写在前面Excel表作为日常工作中经常使用的工具之一，可以用来统计数据、数据分析和可视化数据。Excel有很多强大的功能和函数，但日常数据分析用的最多的函数和功能就是:vlookup、sum、if、sumif和数据透视表。基本可以说，如果掌握了这“4+1”的用法，你的Excel熟练程度已经超过80%的办公室白领。 为了让自己更熟练的掌握着“4+1”的用法，所以我就打算分三篇文章对它们的常用方法和场">
-<meta name="twitter:image" content="https://i.imgur.com/swr6oTH.png">
+<meta name="twitter:image" content="https://i.loli.net/2020/02/02/fO1eNod2zmA4W7I.png">
   <link rel="canonical" href="https://pmhome123.com/2019/11/23/Excel数据分析常用工具(上)——vlookup函数/">
 
 
@@ -262,10 +262,10 @@
 <p>4.range_lookup:（可选）如果需要返回值的近似匹配，可以指定 1或TRUE；如果需要返回值的精确匹配，则指定 0或FALSE。 如果没有指定任何内容，默认值将始终为 TRUE 或近似匹配。<strong>一般情况下，都会指定为0（FALSE）。如果 range_lookup 为 TRUE 或被省略，则必须按升序排列 table_array 第一列中的值；否则，VLOOKUP可能无法返回正确的值。</strong></p>
 <h3 id="vlookup函数的例子"><a href="#vlookup函数的例子" class="headerlink" title="vlookup函数的例子"></a>vlookup函数的例子</h3><p><strong>CASE1：基础单条件查找</strong></p>
 <p>基础单条件查找是vlookup函数最简单的应用，只有单个查阅值，直接使用普通公式就可以解决。如下图：</p>
-<p><img src="https://i.imgur.com/swr6oTH.png" alt="VLOOKUP单条件查询"></p>
+<p><img src="https://i.loli.net/2020/02/02/fO1eNod2zmA4W7I.png" alt="单条件查询.png"></p>
 <p><strong>CASE2：反向查找</strong></p>
 <p>但是，如果当待查找列在原检索区域中不是第1列怎么办？这时就需要重新构造一个序列，使得待查找序列在检索区域中的第1列。如下图所示：</p>
-<p><img src="https://i.imgur.com/kBBnoLW.png" alt="VLOOKUP反向查询"></p>
+<p><img src="https://i.loli.net/2020/02/02/dEMtpjH1NyeoUGR.png" alt="反向查询.png"></p>
 <blockquote>
 <p>要明确的是，这不是一个普通公式，而是一个含有数组的公式。因此在输入完公式后，需要按下Ctrl+Shift+Enter。这样Excel会自动在公式的前后加上大括号，表明这是一个数组公式，不然可能会计算错误。</p>
 </blockquote>
@@ -274,7 +274,7 @@
 <p><em>有关If函数和{1,0}常数序列可参考这里：<a href="https://zhidao.baidu.com/question/157196925.html" target="_blank" rel="noopener">我是链接</a>。</em></p>
 <p><strong>CASE3：多条件查询</strong></p>
 <p>另外，在使用VLOOKUP匹配数据的时候，查阅值是复合的（多个组装在一起）该怎么办？那么也可以用“&amp;”符号将字段拼接起来，同时利用IF序列公式构建出一个虚拟检索区域。如下图：</p>
-<p><img src="https://i.imgur.com/EGBIhGy.png" alt="VLOOKUP多条件查询"></p>
+<p><img src="https://i.loli.net/2020/02/02/uAQUcNDq6VodRxv.png" alt="复杂查询.png"></p>
 <blockquote>
 <p>要明确的是，这不是一个普通公式，而是一个含有数组的公式。因此在输入完公式后，需要按下Ctrl+Shift+Enter。这样Excel会自动在公式的前后加上大括号，表明这是一个数组公式，不然可能会计算错误。</p>
 </blockquote>
