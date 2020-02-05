@@ -1640,6 +1640,7 @@ article:last-child .post-eof {
   color: #999;
   padding: 20px 10px;
   text-align: center;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12) !important;
 }
 .site-overview-wrap {
   overflow-x: hidden;
@@ -1694,7 +1695,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #e221ff;
+  background: #4fddff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
