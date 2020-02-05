@@ -151,7 +151,7 @@ template {
   color: #fff;
 }
 body {
-  background: #f5f7f9;
+  background: #eee;
   color: #555;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1em;
@@ -1016,6 +1016,10 @@ pre .javascript .function {
 .header {
   background: transparent;
 }
+.content-wrap {
+  background: #eee !important;
+  padding: 0 !important;
+}
 .header-inner {
   position: relative;
 }
@@ -1148,7 +1152,7 @@ pre .javascript .function {
 }
 @media (min-width: 1200px) {
   .post-body {
-    font-size: 1.125em;
+    font-size: 1em;
   }
 }
 @media (max-width: 767px) {
@@ -1186,6 +1190,13 @@ pre .javascript .function {
 }
 .use-motion .collection-header {
   opacity: 0;
+}
+.post-block {
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  border-radius: inherit;
+  margin-bottom: 12px;
 }
 .post-button {
   margin-top: 40px;
@@ -1312,17 +1323,15 @@ pre .javascript .function {
   margin-left: 5px;
 }
 .post-eof {
-  background: #ccc;
+/*background: $grey-light;
   height: 1px;
-  margin: 80px auto 60px;
+  margin: $post-eof-margin-top auto $post-eof-margin-bottom;
   text-align: center;
-  width: 8%;
+  width: 8%;  */
+  display: none !important;
 }
 article:last-child .post-eof {
   display: none;
-}
-.posts-expand {
-  padding-top: 40px;
 }
 @media (max-width: 767px) {
   .posts-expand {
@@ -1431,7 +1440,7 @@ article:last-child .post-eof {
 .posts-expand .post-meta {
   color: #999;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  margin: 3px 0 60px 0;
+  margin: 3px 0 20px 0 !important;
   text-align: center;
 }
 .posts-expand .post-meta .post-description {
@@ -1684,7 +1693,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #5578a7;
+  background: #13ff18;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2251,7 +2260,7 @@ ul.breadcrumb li + li:last-child {
   }
 }
 .sidebar {
-  background: #f5f7f9;
+  background: #eee;
   box-shadow: none;
   float: left;
   position: static;
