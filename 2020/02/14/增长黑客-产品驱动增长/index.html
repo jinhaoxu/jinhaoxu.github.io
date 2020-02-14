@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-32x32.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=7.4.0">
+  <link rel="mask-icon" href="/images/favicon-32x32.png?v=7.4.0" color="#222">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.0">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.4.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="产品在经历一段时间稳定发展后会进入稳定期，出现“用户新增引擎动力不足”、“新增用户成本高”、“用户可选择竞品越来越多”等问题，那如何让产品焕发新生、让“用户新增引擎”加满油呢？ 一、转向产品型驱动增长的背景销售型驱动增长大型SAAS软件诸如Salesforce、Workday、金蝶、用友等，由于系统功能成熟、复杂，面向大型企业客户，付费能力强，客单价高，需要售前团队沟通需求和提供解决方案，所以它">
+<meta name="keywords" content="产品经理, PMhome123, PM, 产品需求, 互联网产品经理, 人人都是产品经理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="增长黑客--产品驱动增长">
+<meta property="og:url" content="https://pmhome123.com/2020/02/14/增长黑客-产品驱动增长/index.html">
+<meta property="og:site_name" content="PMhome123">
+<meta property="og:description" content="产品在经历一段时间稳定发展后会进入稳定期，出现“用户新增引擎动力不足”、“新增用户成本高”、“用户可选择竞品越来越多”等问题，那如何让产品焕发新生、让“用户新增引擎”加满油呢？ 一、转向产品型驱动增长的背景销售型驱动增长大型SAAS软件诸如Salesforce、Workday、金蝶、用友等，由于系统功能成熟、复杂，面向大型企业客户，付费能力强，客单价高，需要售前团队沟通需求和提供解决方案，所以它">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.loli.net/2020/02/14/dAQz4DSOc8lnJob.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/14/auZ7V516eLEcKXW.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/02/14/2oXT5n3awKtVLgF.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/02/14/auZ7V516eLEcKXW.jpg">
+<meta property="og:updated_time" content="2020-02-14T08:23:10.641Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="增长黑客--产品驱动增长">
+<meta name="twitter:description" content="产品在经历一段时间稳定发展后会进入稳定期，出现“用户新增引擎动力不足”、“新增用户成本高”、“用户可选择竞品越来越多”等问题，那如何让产品焕发新生、让“用户新增引擎”加满油呢？ 一、转向产品型驱动增长的背景销售型驱动增长大型SAAS软件诸如Salesforce、Workday、金蝶、用友等，由于系统功能成熟、复杂，面向大型企业客户，付费能力强，客单价高，需要售前团队沟通需求和提供解决方案，所以它">
+<meta name="twitter:image" content="https://i.loli.net/2020/02/14/dAQz4DSOc8lnJob.png">
+  <link rel="canonical" href="https://pmhome123.com/2020/02/14/增长黑客-产品驱动增长/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>增长黑客--产品驱动增长 | PMhome123</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">PMhome123</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">1.我不管需求怎么实现，我就要明天上线; 2.怎么又出Bug了? 3.人人都是产品经理</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+            
+
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="https://pmhome123.com/2020/02/14/增长黑客-产品驱动增长/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="PMhome123">
+      <meta itemprop="description" content="一枚原型仔，擅长甩锅。素质三连：不是我，我没有，别瞎说。老老实实写点东西。">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="PMhome123">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">增长黑客--产品驱动增长
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2020-02-14 16:22:47" itemprop="dateCreated datePublished" datetime="2020-02-14T16:22:47+08:00">2020-02-14</time>
+            </span>
+          
+
+          
+            <span class="post-meta-item" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <blockquote>
+<p>产品在经历一段时间稳定发展后会进入稳定期，出现“用户新增引擎动力不足”、“新增用户成本高”、“用户可选择竞品越来越多”等问题，那如何让产品焕发新生、让“用户新增引擎”加满油呢？</p>
+</blockquote><h2 id="一、转向产品型驱动增长的背景"><a href="#一、转向产品型驱动增长的背景" class="headerlink" title="一、转向产品型驱动增长的背景"></a>一、转向产品型驱动增长的背景</h2><h3 id="销售型驱动增长"><a href="#销售型驱动增长" class="headerlink" title="销售型驱动增长"></a>销售型驱动增长</h3><p>大型SAAS软件诸如Salesforce、Workday、金蝶、用友等，由于系统功能成熟、复杂，面向大型企业客户，付费能力强，客单价高，需要售前团队沟通需求和提供解决方案，所以它们是销售型驱动增长。</p><a id="more"></a>
+
+<p>销售型驱动增长的特点还包括：客户决策周期长、销售关注人群一般是决策人或CIO、上门拜访交易等。这些因素也导致销售型增长获客成本居高不下，对产品实现爆发性增长带来摩擦力。</p>
+<h3 id="产品型驱动增长"><a href="#产品型驱动增长" class="headerlink" title="产品型驱动增长"></a>产品型驱动增长</h3><p>传统销售型驱动增长为什么要转向产品型驱动增长？</p>
+<p>1.<strong>流量见顶</strong>。销售驱动增长的思维模式是流量思维，包括线上直销、客户库存、上门拜访、企业黄页、SEM等。随着产品的发展，产品的流量新增的速度会降低，销售驱动增长的动力会出现“动力不足”，产品增长就遇到了瓶颈。</p>
+<p>2.<strong>竞品增多，获客越来越难、成本变高</strong>。在市场发展早起，产品的竞争对手较少时，甚至没有竞争对手时，销售驱动增长是很合适的，专业的销售人员能迅速的打开市场，建立用户对产品的认知，获客成本较低。但随着市场的发展，竞品越来越多时，用户的选择变多了，单纯靠销售人员获客越来越难。</p>
+<p>3.<strong>客单价变低</strong>。竞争对手的增多，想要“圈”更多的用户，拿下更多的市场份额，就要增加产品的优势。降低产品价格是企业常用手段之一。降低产品定价、增加营销活动，导致了客单价降低。</p>
+<p>而转向产品型驱动增长可以解决这些问题。产品型驱动增长的特点：</p>
+<ul>
+<li>面向中小型企业</li>
+<li>面向最终客户，销售方式自下而上</li>
+<li>服务每一个客户的边际成本低</li>
+<li>用户能够实现自服务、自使用</li>
+<li>更低的获客成本（Customer acquisition cost，CAC）</li>
+<li>更高的LTV（在这里可简单理解为用户给公司带来的收入）</li>
+</ul>
+<blockquote>
+<p>LTV(life time value)生命周期总价值，意为客户终生价值，是公司从用户所有的互动中所得到的全部经济收益的总和。通常被应用于市场营销领域，用于衡量企业客户对企业所产生的价值，被定为企业是否能够取得高利润的重要参考指标。</p>
+</blockquote>
+<div align="center">
+<img src="https://i.loli.net/2020/02/14/dAQz4DSOc8lnJob.png" width="540" height="320" alt="产品型驱动增长优势" align="center">
+</div>
+## 二、方法论 ##
+产品型驱动增长的一般方法论包括：
+
+<ul>
+<li>搭建增长团队</li>
+<li>打磨产品</li>
+<li>确定增长模型</li>
+<li>快节奏试验</li>
+</ul>
+<p>1.<strong>搭建增长团队</strong>。搭建团队包括确定团队人员构成、团队规模和工作范畴、工作流程和人员分工。明确团队的工作范畴和清晰工作流程是需要注意的。</p>
+<p>在创业公司或小型企业，增长团队可能只有几个人，每个人负责的工作不止一项。但是在大型公司，增长团队的任务和重心则取决于公司需要。所以，增长团队工作范围可能非常宽泛，如负责公司各个领域的增长业务；也可能非常具体，如负责产品某个部分的改进，如购物车转化率；有些公司成立了多个增长团队，负责不同的领域，如Pinterest有四个增长团队，分别负责用户获取、病毒式增长、用户参与和新用户激活。</p>
+<p>增长团队的工作流程是一个循环模型。由四个步骤组成：（1）数据分析和需求收集；（2）产生想法；（3）排定试验优先级；（4）快速试验。</p>
+<div align="center">
+<img src="https://i.loli.net/2020/02/14/auZ7V516eLEcKXW.jpg" width="480" height="280" alt="工作流程" align="center">
+</div>
+增长团队一般需要定期召开增长会议以保证工作进度。在每周的增长会议上，将提出的试验想法分配给成员执行、分析或研究，增长负责人则需要定期检查工作进度，帮助成员解决遇到的问题。
+
+<p>2.<strong>打磨产品</strong>。增长黑客、病毒性传播听上去很酷的样子，那是否越早开展产品型驱动增长越好？答案是否定的。</p>
+<p>在产品发展早期，如果过早的开展增长黑客，不仅得不到想要的效果，反而会收获用户的失望。有时候虽然能够取得暂时的病毒增长，但如果如果想要维持长期的用户增长，首先必须有个好产品。</p>
+<p><strong>找到产品的Aha-Moment（啊哈时刻），并优化用户达到“啊哈时刻”的路径。</strong>“啊哈时刻”就是产品使用户眼前一亮、发出“啊哈”声的时刻，是用户真正发现产品核心价值的时刻。</p>
+<div align="center">
+<img src="https://i.loli.net/2020/02/14/2oXT5n3awKtVLgF.jpg" width="320" height="280" alt="Aha时刻" align="center">
+</div>
+比如Slack的后台数据显示，当团队成员发送和接收的消息数达到2000条时，团队会将Slack作为主要沟通工具；Facebook在前10天内添加了7个好友、Twitter新用户关注了30个用户后，等等。这些“啊哈时刻”都是通过进一步挖掘用户数据与反馈得到的，如果前期数据量较少，无法得出结论时，可以通过问卷调查和用户访谈找到用户眼中的产品价值。
+
+<p>在寻找“啊哈时刻”过程中，我们可以受益不少：</p>
+<ul>
+<li>找到了一批忠实用户</li>
+<li>知道了产品的不足</li>
+<li>知道了活跃用户的行为</li>
+<li>得到了用户眼中的产品价值和定位</li>
+<li>……</li>
+</ul>
+<p><strong>找到产品的“啊哈时刻”和忠实用户，其本质是：实现了产品——市场匹配，产品在市场找到了自己的定位，便可在此基础是实现高速增长。</strong></p>
+<p>找到产品的“啊哈时刻”是破解增长难题的第一步，下一步便是明确增长战略。</p>
+<p>3.<strong>确定增长模型</strong>。第一步是明确哪些指标对产品增长是最为重要的，即建立“基本增长等式”，把所有与增长相关的因素都囊括在这个等式，这些因素相加共同驱动增长，这个公式每个产品或企业都不尽相同。</p>
+<p>摩根所在的英曼公司的等式如下：</p>
+<blockquote>
+<p>（网站流量 X 邮件转化率 X 激活用户率 X 付费订阅转化率) + 留存订阅用户 + 复活订阅用户 = 来自订阅用户的收入增长</p>
+</blockquote>
+<p>等式可能看起来过于简单，企业成功的背后还有诸多其他的因素驱动，但是简介明了的增长公式可以为增长团队提供极大的帮助，使他们在杂乱的数据海洋中找准方向。公式中包含的增长关键因素可能有好几个，为了保证增长黑客的效果，就要找到最重要的增长指标，也就是<strong>“北极星指标”</strong>。</p>
+<p>北极星指标应能够最为精准的抓住企业为客户创造的核心价值。对于WhatsApp（一个免费通信应用）来说，“啊哈体验”就是无论身处在世界上的哪个角落，他们都能向亲朋好友发送免费的消息。所以WhatsApp的北极星指标就是用户发送的消息数。</p>
+<p>增长策略的方向始终是以为客户创造价值为导向，只有让客户体验到产品更多的“啊哈时刻”，并持续下去，产品才能高速增长。</p>
+<p>4.<strong>快节奏试验</strong>。确定好增长模型后，便可以着手准备试验。因为增长模型一开始并不是完美的，它需要通过不断的试验去完善优化。增长必须遵循一个非常严格的试验过程，使团队能够形成充足的试验想法储备，并高效的排定试验优先顺序。</p>
+<div align="center">
+<img src="https://i.loli.net/2020/02/14/auZ7V516eLEcKXW.jpg" width="480" height="280" alt="工作流程" align="center">
+</div>
+
+<p>这一循环中每一个步骤的完成都应当保持固定的节奏，一般来说，以每一两周完成一次循环为佳，在每周例会上审视试验结果并决定下一周要执行的试验。</p>
+<h2 id="三、总结"><a href="#三、总结" class="headerlink" title="三、总结"></a>三、总结</h2><p>产品型驱动增长降低了获客成本、改变了销售方式，虽然可能会降低客单价，但是获得了更大的用户基数、更高的LTV；它与传统的软件销售的流量思维不一样，产品型驱动需要构建一个增长模型，通过优化增长模型里的“北极星指标”，让产品持续高速增长。</p>
+<p>同时，它是敏捷、快速的，它的指标也不是一成不变，随着企业的增长，初期目标得以实现后，北极星指标也会随之改变，指标的确定通过快节奏的试验找到最优解，保证团队以最快的速度持续开展试验，让产品增长引擎持续获得动力，最终实现产品高速增长。</p>
+
+    </div>
+
+    
+    
+    
+        
+      
+
+      <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2020/01/21/必看-10所美国顶尖大学必读书单/" rel="next" title="必看!10所美国顶尖大学必读书单">
+                  <i class="fa fa-chevron-left"></i> 必看!10所美国顶尖大学必读书单
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+        
+        
+        
+        
+      
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、转向产品型驱动增长的背景"><span class="nav-number">1.</span> <span class="nav-text">一、转向产品型驱动增长的背景</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#销售型驱动增长"><span class="nav-number">1.1.</span> <span class="nav-text">销售型驱动增长</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#产品型驱动增长"><span class="nav-number">1.2.</span> <span class="nav-text">产品型驱动增长</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、总结"><span class="nav-number">2.</span> <span class="nav-text">三、总结</span></a></li></ol></div>
+        
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="/images/avatar.jpg"
+      alt="PMhome123">
+  <p class="site-author-name" itemprop="name">PMhome123</p>
+  <div class="site-description" itemprop="description">一枚原型仔，擅长甩锅。素质三连：不是我，我没有，别瞎说。老老实实写点东西。</div>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="mailto:1031610762@qq.com" title="E-Mail &rarr; mailto:1031610762@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+    
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">jinhaoxu</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.4.0</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+    <span class="post-meta-divider">|</span>
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+
+
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
+<script src="/js/schemes/pisces.js?v=7.4.0"></script>
+<script src="/js/next-boot.js?v=7.4.0"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
