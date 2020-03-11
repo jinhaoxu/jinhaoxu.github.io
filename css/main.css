@@ -938,6 +938,18 @@ pre .javascript .function {
   margin: 60px 20px 0;
   overflow: hidden;
 }
+.vwrap {
+  border: 2px solid #fbe491;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+}
+.vsubmit {
+  color: #3090e4;
+  border-color: #3090e4;
+}
 .comment-button-group {
   display: flex;
   flex-wrap: wrap-reverse;
@@ -1695,7 +1707,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #a24ff1;
+  background: #f2fff6;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
