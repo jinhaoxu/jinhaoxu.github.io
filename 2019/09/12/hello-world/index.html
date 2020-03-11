@@ -280,7 +280,7 @@
     
         <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
   <img id="wechat_subscriber_qcode" src="https://i.loli.net/2020/03/11/Du2c6LHQasnNf58.jpg" alt="PMhome123 wechat" style="width: 200px; max-width: 100%;">
-  <div>扫码关注我的公众号</div>
+  <div></div>
 </div>
 
       
@@ -472,7 +472,7 @@
 
 
 <script>
-NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+NexT.utils.getScript('https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js', () => {
   var GUEST = ['nick', 'mail', 'link'];
   var guest = 'nick,mail,link';
   guest = guest.split(',').filter(item => {
@@ -481,15 +481,15 @@ NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
   new Valine({
     el: '#comments',
     verify: true,
-    notify: false,
-    appId: 'RWB8X4V6RgOCU87F4pxagRpu-gzGzoHsz',
-    appKey: 'KOer1xky3If2U8GKH52gYV3R',
+    notify: true,
+    appId: 'h9RBuyXh5YEPKH0bbM9vmmKK-gzGzoHsz',
+    appKey: 'qlOOrKRLtNrHXsn7KvG56Tvm',
     placeholder: '请尽量让您的评论对别人有帮助',
     avatar: 'mm',
     meta: guest,
     pageSize: '15' || 10,
     visitor: false,
-    lang: '' || 'zh-cn',
+    lang: 'zh-cn' || 'zh-cn',
     path: location.pathname
   });
 }, window.Valine);
