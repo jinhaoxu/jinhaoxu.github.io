@@ -1038,6 +1038,7 @@ pre .javascript .function {
 .site-meta {
   margin: 0;
   text-align: center;
+  background: #efb920 !important;
 }
 @media (max-width: 767px) {
   .site-meta {
@@ -1052,6 +1053,7 @@ pre .javascript .function {
   line-height: 1.375em;
   padding: 0 40px;
   position: relative;
+  color: #000;
 }
 .brand:hover {
   color: #fff;
@@ -1066,12 +1068,13 @@ pre .javascript .function {
   display: inline-block;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1.375em;
-  font-weight: normal;
+  font-weight: 700;
   line-height: 1.5;
   vertical-align: top;
 }
 .site-subtitle {
   color: #ddd;
+  color: #000 !important;
   font-size: 0.8125em;
   margin-top: 10px;
 }
@@ -1702,7 +1705,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ddffe0;
+  background: #f596ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
