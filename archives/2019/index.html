@@ -31,7 +31,7 @@
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
     copycode: {"enable":false,"show_result":false,"style":null},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
-    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    bookmark: {"enable":true,"color":"#222","save":"auto"},
     fancybox: false,
     mediumzoom: false,
     lazyload: false,
@@ -182,6 +182,7 @@
     <span>0%</span>
   </div>
   <div class="reading-progress-bar"></div>
+  <a class="book-mark-link book-mark-link-fixed" href="#"></a>
 
 
     <main id="main" class="main">
@@ -400,6 +401,122 @@
 
 
 
+  
+  
+
+  
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+          <a class="post-title-link" href="/2019/10/12/互联网产品经理能力图谱/" itemprop="url">
+            <span itemprop="name">互联网产品经理能力图谱</span>
+          </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2019-10-12T09:37:57+08:00"
+              content="2019-10-12">
+          10-12
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+  
+  
+
+  
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+          <a class="post-title-link" href="/2019/09/26/读书不二/" itemprop="url">
+            <span itemprop="name">读书不二</span>
+          </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2019-09-26T18:32:44+08:00"
+              content="2019-09-26">
+          09-26
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+  
+  
+
+  
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+          <a class="post-title-link" href="/2019/09/25/如何提出一个好问题/" itemprop="url">
+            <span itemprop="name">如何提出一个好问题</span>
+          </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2019-09-25T17:14:05+08:00"
+              content="2019-09-25">
+          09-25
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+  
+  
+
+  
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+          <a class="post-title-link" href="/2019/09/19/百分之80的人都会在工作时间摸鱼/" itemprop="url">
+            <span itemprop="name">百分之80的人都会在工作时间摸鱼</span>
+          </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2019-09-19T17:39:00+08:00"
+              content="2019-09-19">
+          09-19
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
 
     </div>
   </div>
@@ -492,25 +609,6 @@
   <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.4.0</div>
 
         
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-user"></i>
-    </span>
-    <span class="site-uv" title="总访客量">
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-    </span>
-  
-    <span class="post-meta-divider">|</span>
-  
-    <span class="post-meta-item-icon">
-      <i class="fa fa-eye"></i>
-    </span>
-    <span class="site-pv" title="总访问量">
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-    </span>
-  
-</div>
 
 
 
@@ -536,7 +634,7 @@
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 <script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
 <script src="/js/schemes/pisces.js?v=7.4.0"></script>
-<script src="/js/next-boot.js?v=7.4.0"></script>
+<script src="/js/next-boot.js?v=7.4.0"></script><script src="/js/bookmark.js?v=7.4.0"></script>
 
 
 
@@ -567,6 +665,31 @@
   
 
   
+
+
+<script>
+NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(item => {
+    return GUEST.includes(item);
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: false,
+    appId: 'RWB8X4V6RgOCU87F4pxagRpu-gzGzoHsz',
+    appKey: 'KOer1xky3If2U8GKH52gYV3R',
+    placeholder: '请尽量让您的评论对别人有帮助',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '15' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn',
+    path: location.pathname
+  });
+}, window.Valine);
+</script>
 
 </body>
 </html>
