@@ -939,16 +939,11 @@ pre .javascript .function {
   overflow: hidden;
 }
 .vwrap {
-  border: 2px solid #fbe491;
-  border-radius: 4px;
-  margin-bottom: 10px;
-  overflow: hidden;
-  position: relative;
-  padding: 10px;
+  border: 2px solid #fbe491 !important;
 }
 .vsubmit {
-  color: #3090e4;
-  border-color: #3090e4;
+  color: #3090e4 !important;
+  border-color: #3090e4 !important;
 }
 .comment-button-group {
   display: flex;
@@ -1707,7 +1702,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #f2fff6;
+  background: #4fd2ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
