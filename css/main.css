@@ -1053,7 +1053,6 @@ pre .javascript .function {
   line-height: 1.375em;
   padding: 0 40px;
   position: relative;
-  color: #000;
 }
 .brand:hover {
   color: #fff;
@@ -1071,6 +1070,7 @@ pre .javascript .function {
   font-weight: 700;
   line-height: 1.5;
   vertical-align: top;
+  color: #000;
 }
 .site-subtitle {
   color: #ddd;
@@ -1705,7 +1705,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #f596ff;
+  background: #ff50ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
