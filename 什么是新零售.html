@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="google-site-verification" content="a8lqKpmgYvW_al-yPTUv8vAfcPIhnXtiIuV7axp82Iw" />
+<meta name="baidu-site-verification" content="iL3jiwCWEt" />
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-32x32.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=7.4.0">
+  <link rel="mask-icon" href="/images/favicon-32x32.png?v=7.4.0" color="#222">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.0">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.4.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="最近这几年“新零售”这个概念被炒得很火，零售行业衍生了很多新的“生财之道”，因为我自己在电商领域工作，所以写一下我这两年对于新零售的理解。“新零售”这个概念的提出不是空穴来风，有它的政策背景。 2016 年11月11日，国务院办公厅印发《关于推动实体零售创新转型的意见》（国办发〔2016〕78 号），明确了推动我国实体零售创新转型的指导思想和基本原则。">
+<meta name="keywords" content="产品经理, PMhome123, PM, 产品需求, 互联网产品经理, 人人都是产品经理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="什么是新零售">
+<meta property="og:url" content="https://pmhome123.com/什么是新零售.html">
+<meta property="og:site_name" content="PMhome123">
+<meta property="og:description" content="最近这几年“新零售”这个概念被炒得很火，零售行业衍生了很多新的“生财之道”，因为我自己在电商领域工作，所以写一下我这两年对于新零售的理解。“新零售”这个概念的提出不是空穴来风，有它的政策背景。 2016 年11月11日，国务院办公厅印发《关于推动实体零售创新转型的意见》（国办发〔2016〕78 号），明确了推动我国实体零售创新转型的指导思想和基本原则。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.loli.net/2020/03/04/iQCG4LDg7V1cx9t.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/03/04/yHPIOY2UCg5sqn8.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/04/z2CLoItseNkGR6Q.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/03/04/PBy8XaUnwYzLSpg.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/03/04/DInkyYWP5dsoXMZ.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/03/04/Ayqc8BpgYXaluK3.png">
+<meta property="og:updated_time" content="2020-03-04T07:10:19.528Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="什么是新零售">
+<meta name="twitter:description" content="最近这几年“新零售”这个概念被炒得很火，零售行业衍生了很多新的“生财之道”，因为我自己在电商领域工作，所以写一下我这两年对于新零售的理解。“新零售”这个概念的提出不是空穴来风，有它的政策背景。 2016 年11月11日，国务院办公厅印发《关于推动实体零售创新转型的意见》（国办发〔2016〕78 号），明确了推动我国实体零售创新转型的指导思想和基本原则。">
+<meta name="twitter:image" content="https://i.loli.net/2020/03/04/iQCG4LDg7V1cx9t.jpg">
+  <link rel="canonical" href="https://pmhome123.com/什么是新零售">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>什么是新零售 | PMhome123</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">PMhome123</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">产品经理导航之家</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-links">
+      
+    
+
+    <a href="/links/" rel="section"><i class="menu-item-icon fa fa-fw fa-link"></i> <br>产品经理常用网站</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+            
+
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="https://pmhome123.com/什么是新零售.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="PMhome123">
+      <meta itemprop="description" content="PMhome123产品经理导航之家，致力于收集最'产品'资讯，包含干货、资源、常用工具和网站。">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="PMhome123">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">什么是新零售
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2020-03-04 15:03:29" itemprop="dateCreated datePublished" datetime="2020-03-04T15:03:29+08:00">2020-03-04</time>
+            </span>
+          
+
+          
+            <span class="post-meta-item" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/什么是新零售.html#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/什么是新零售.html" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>最近这几年“新零售”这个概念被炒得很火，零售行业衍生了很多新的“生财之道”，因为我自己在电商领域工作，所以写一下我这两年对于新零售的理解。</p><p>“新零售”这个概念的提出不是空穴来风，有它的政策背景。</p><blockquote>
+<p>2016 年11月11日，国务院办公厅印发《关于推动实体零售创新转型的意见》（国办发〔2016〕78 号），明确了推动我国实体零售创新转型的指导思想和基本原则。</p>
+</blockquote><a id="more"></a>
+
+
+<p>另外是传统电商和零售行业增长遇到了“瓶颈”，需要找到新的突破口。</p>
+<blockquote>
+<p>经过近年来的全速前行，传统电商由于互联网和移动互联网终端大范围普及所带来的用户增长以及流量红利正逐渐萎缩，传统电商所面临的增长“瓶颈”开始显现。国家统计局的数据显示：全国网上零售额的增速已经连续三年下滑，2014 年1-9 月份的全国网上零售额为18238亿元，同比增长达到49.9%；2015年1-9月份的全国网上零售额为25914亿元，同比增长降到36.2%，而在2016年的1-9 月份，全国网上零售额是34651 亿元，增速仅为26.1%</p>
+</blockquote>
+<p>基于这两个背景，促使这几年“新零售”被炒得火热。</p>
+<h3 id="一、到底什么是新零售"><a href="#一、到底什么是新零售" class="headerlink" title="一、到底什么是新零售"></a>一、到底什么是新零售</h3><p>定义：个人、企业以互联网为依托，通过运用大数据、人工智能等先进技术手段，对商品的生产、流通与销售过程进行升级改造，进而重塑业态结构与生态圈，并对线上服务、线下体验以及现代物流进行深度融合的零售新模式。</p>
+<p>基于上面的百度百科定义，可以看到新零售更加注重互联网、大数据、销售流程、服务体验和物流的升级改革。所以，接下来我也打算从这几个方面聊一下我对新零售的理解。</p>
+<h3 id="二、营销方式发生改变"><a href="#二、营销方式发生改变" class="headerlink" title="二、营销方式发生改变"></a>二、营销方式发生改变</h3><p>智能手机和移动互联网的发展，电商平台的大力推广，让更多人接触到电商，学会了从网上买东西。上次回到家，隔壁的大娘还跟我炫耀前几天从网上TB买的新鞋子；没过一会儿，亲戚家人群又来了一条拼购链接，是兄弟就来PDD砍我；女朋友在看李佳琦的直播，顺手买下了一个包；我在微信上打开京东买了一个耳机；快递员打电话给我说，我的盒马鲜生到楼下了~</p>
+<p>电商平台仍然是零售行业的重要销售渠道，但是它们的销售模式发生了一些改变。以PDD为打头先锋的<strong>亲友拼购</strong>销售模式，无疑是近几年最火爆的销售方式之一，通过邀请亲朋好友帮忙“砍价”，买家便可以低价甚至免费获得商品。买家要的是商品和优惠，对于邀请亲朋好友砍一刀对于他们来说是“似乎没有成本”，PDD作为新平台需要用户量和卖家入驻。这种方式，对于中国广阔的下沉市场是极具吸引力的，PDD更是凭着下沉市场的用户成功上市。</p>
+<div align="center">
+<img src="https://i.loli.net/2020/03/04/iQCG4LDg7V1cx9t.jpg" width="200" height="200">
+</div>
+
+
+<p>如果你是一名宝妈，你很可能会有一个<strong>社区团购</strong>微信群。前期的社区团购目的比较简单，街坊邻里有时需要拼团领优惠，组了一个微信群，需要拼团时便在群里发信息，邀请拼团。慢慢的，有些人发现有好产品也会往群里发，推荐大家购买，在我看来这是一种基于“邻居信任”的导购。现在电商平台上的同类产品琳琅满目，同质化严重，买家也不知道买哪个好，有了“邻居”的推荐背书，用户会有更高的购买动机，如果同样是宝妈，那么需求会更相同。</p>
+<div align="center">
+<img src="https://i.loli.net/2020/03/04/yHPIOY2UCg5sqn8.png" width="400" height="200">
+</div>
+
+
+
+<p>这几年同样火爆的还有<strong>直播带货</strong>。你可能看过李佳琦的直播，即使没看过，你也听过李佳琦这个人。李佳琦一次直播能够试用380支口红、5个半小时直播能够卖出23000多单，交易额350万元……这位拥有2000多万抖音粉丝的90后男生，让舆论一次又一次地感叹网红带货的实力，或者说头部网红的恐怖威能。以直播的方式销售，颠覆了用户以前的购买体验。以前网购商品，都是自己凭经验判断商品要不要买，网红主播的出现，让用户有了更好的购买参考。网红主播通过专业的讲解 + 以“身”试商品 + 一番慷慨激昂的动员演讲，在从众心理的衬托下，直播带货爆单是自然而然的事。</p>
+<div align="center">
+<img src="https://i.loli.net/2020/03/04/z2CLoItseNkGR6Q.jpg" width="400" height="200">
+</div>
+
+
+<p>线上红利难增长，零售流量难引入，单独企业或品牌在平台内部难以形成突破，于是<strong>跨平台合作</strong>成为新的方向。通过跨平台强强结合，发挥各自优势，扩大流量的来源，丰富品牌推广渠道，达成双赢局面。跨平台合作不仅仅局限于品牌商家之间的合作，数据的共享、打通也是重中之重，所以对商家来说，跟“数据”合作能促成很好的营销效果。典型的有沃尔玛与谷歌合作推出语音购物服务、爱奇艺和京东打造联合会员、微信与京东合作。</p>
+<div align="center">
+<img src="https://i.loli.net/2020/03/04/PBy8XaUnwYzLSpg.jpg" width="400" height="200">
+</div>
+
+
+<p>生鲜行业为什么值得做新零售呢?因为生鲜是易损坏和物流成本比较高的品类，从长途物流这个环节来看，它不够经济。如果要在网上买新鲜的海产，电商送货的物流成本非常高，根本不合适。所以还是去盒马，去线下购买更划算。用户可以通过盒马鲜生APP下单，在家等配送，也可以去线下门店取货，盒马鲜生实现了<strong>线上平台和线下门店融合</strong>。盒马之所以能成功，很大一部分原因是由于阿里巴巴的支持，通过自身平台全球供应链的多年的打造，可以说阿里在尽自己最大的努力打造着国人需求的供应链系统，对国内消费者的理解上，阿里也要优于其它的电商平台，所以说在整套的客户需求供应链系统上，盒马鲜生有着其他品牌的无法比拟的天然优势。</p>
+<div align="center">
+<img src="https://i.loli.net/2020/03/04/DInkyYWP5dsoXMZ.jpg" width="400" height="200">
+</div>
+
+<h3 id="三、业务数字化"><a href="#三、业务数字化" class="headerlink" title="三、业务数字化"></a>三、业务数字化</h3><p>零售业务的数字化本质就是“人-货-场”的数字化。业务的数字化这块，本质是要通过把原来线下的体验、营销、交易、服务用线上的数字系统来去承载，实现数字化的业务。这里面又分为人、货、场的重构。</p>
+<p><strong>1.“人”数字化。</strong>指的是构建消费者画像，把消费者的所有行为数字化，根据数据分析的结果建立对用户的精准化服务。简单说就是给你打标签，然后根据同类标签用户的购物习惯或者你的浏览行为，给你推荐商品。数字化用户不仅对分析用户需求有帮助，同时对营销活动也很适合。比如我经常喝的瑞幸咖啡，根据用户的生命周期，首购的送什么券、裂变的送什么券、复购会员的送什么券，达到提升获客率和转化率的效果，通过会员的分层进行个性化的营销和服务，实现更细化的精细化的运营。</p>
+<p><strong>2.“货”数字化。</strong>货的数字化是指每个商品都需要建档管理，打上电子标签，从采购、收货、入库、上架、取货、打包、配送整个链路都要数字化，这样才有可能精细化控制商品的整个链路。像盒马这样的生鲜来说，还需要把非标品打包，变成标品，虽然会有多的成本，但是只有这样才能实现真正的线上、线下的商品、库存、价格统一联动，才能实现数字驱动的商品运营，同时，精细化管理的商品，通过数据分析还可以洞察市场需求，从而提供一些决策建议。</p>
+<p><strong>3.“场”数字化。</strong>场的数字化，我理解为仓库数字化和交易场所数字化。仓库数字化意味着商品签收、质检、入库、盘点、调拨、出库都有对应的数据记录，其中的商品信息能把整个入库信息链接起来，货架和商品的摆放也通过数字化的形式管理，提高拣货效率；交易场所的数字化，意味着商店货架的陈列本身也是容器化，每一个位置都是有编码管理，商品上架的时候，通过扫描把商品的陈列和电子标签都联动起来，还可以对场的人流的进行识别，分析流量转化率。</p>
+<p>实现人货场的全链路数字化，提高了零售企业的管理效率，优化了销售流程，提升了用户服务体验，是新零售的重要特点。</p>
+<div align="center">
+<img src="https://i.loli.net/2020/03/04/Ayqc8BpgYXaluK3.png" width="800" height="450">
+</div>
+
+<h3 id="四、小结"><a href="#四、小结" class="headerlink" title="四、小结"></a>四、小结</h3><p>我这里提到的新零售特点主要是：获取流量的方式变革和业务数字化，在零售行业中偏前端。但其实新零售包含的东西还有很多，像中端包括建立体系化运营（内容运营、会员运营、活动运营、社区运营等），后端包括供应仓库-配送链路整合。    如果再过一两年，我对新零售有更深的理解后，说不定会再写一篇文章来阐述它。</p>
+<p>5G万物互联，将会给新零售带来新的打开方式，新零售行业的蓬勃发展也会带动电商SaaS工具、终端系统、配套硬件的发展，拭目以待！</p>
+
+    </div>
+
+    
+    
+    
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
+  <img id="wechat_subscriber_qcode" src="https://i.loli.net/2020/03/11/Du2c6LHQasnNf58.jpg" alt="PMhome123 wechat" style="width: 200px; max-width: 100%;">
+  <div></div>
+</div>
+
+      
+        
+      
+
+      <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/如何提高应对黑天鹅的能力.html" rel="next" title="如何提高应对黑天鹅的能力">
+                  <i class="fa fa-chevron-left"></i> 如何提高应对黑天鹅的能力
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/为什么不建议女生当产品经理.html" rel="prev" title="为什么不建议女生当产品经理">
+                  为什么不建议女生当产品经理 <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+    
+    <div class="comments" id="comments"></div>
+  
+
+        </div>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+        
+        
+        
+        
+      
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、到底什么是新零售"><span class="nav-number">1.</span> <span class="nav-text">一、到底什么是新零售</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、营销方式发生改变"><span class="nav-number">2.</span> <span class="nav-text">二、营销方式发生改变</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、业务数字化"><span class="nav-number">3.</span> <span class="nav-text">三、业务数字化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、小结"><span class="nav-number">4.</span> <span class="nav-text">四、小结</span></a></li></ol></div>
+        
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="/images/avatar.jpg"
+      alt="PMhome123">
+  <p class="site-author-name" itemprop="name">PMhome123</p>
+  <div class="site-description" itemprop="description">PMhome123产品经理导航之家，致力于收集最'产品'资讯，包含干货、资源、常用工具和网站。</div>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="mailto:1031610762@qq.com" title="E-Mail &rarr; mailto:1031610762@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+    
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">jinhaoxu</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.4.0</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+
+
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
+<script src="/js/schemes/pisces.js?v=7.4.0"></script>
+<script src="/js/next-boot.js?v=7.4.0"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.getScript('https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js', () => {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(item => {
+    return GUEST.includes(item);
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: true,
+    appId: 'h9RBuyXh5YEPKH0bbM9vmmKK-gzGzoHsz',
+    appKey: 'qlOOrKRLtNrHXsn7KvG56Tvm',
+    placeholder: '在这里输入评论内容，请尽量让您的评论对别人有帮助',
+    avatar: 'retro',
+    meta: guest,
+    pageSize: '15' || 10,
+    visitor: false,
+    lang: 'zh-cn' || 'zh-cn',
+    path: location.pathname
+  });
+}, window.Valine);
+</script>
+
+</body>
+</html>

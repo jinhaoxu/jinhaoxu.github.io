@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="google-site-verification" content="a8lqKpmgYvW_al-yPTUv8vAfcPIhnXtiIuV7axp82Iw" />
+<meta name="baidu-site-verification" content="iL3jiwCWEt" />
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-32x32.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=7.4.0">
+  <link rel="mask-icon" href="/images/favicon-32x32.png?v=7.4.0" color="#222">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.0">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.4.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="最近有大四的师弟师妹问我，产品经理是什么？产品经理是不是只需要画画原型、开开会就可以了？ 产品经理对自己的能力有什么要求？  相信很多人是因为看了苏杰的那本《人人都是产品经理》而选择产品经理这条路，被书名震撼并深信不疑，然后就屁颠屁颠的去当“经理”了，接着发现压根不是经理，更像是打杂，还天天跟人扯皮，是不是感觉被坑了？">
+<meta name="keywords" content="产品经理, PMhome123, PM, 产品需求, 互联网产品经理, 人人都是产品经理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="互联网产品经理能力图谱">
+<meta property="og:url" content="https://pmhome123.com/互联网产品经理能力图谱.html">
+<meta property="og:site_name" content="PMhome123">
+<meta property="og:description" content="最近有大四的师弟师妹问我，产品经理是什么？产品经理是不是只需要画画原型、开开会就可以了？ 产品经理对自己的能力有什么要求？  相信很多人是因为看了苏杰的那本《人人都是产品经理》而选择产品经理这条路，被书名震撼并深信不疑，然后就屁颠屁颠的去当“经理”了，接着发现压根不是经理，更像是打杂，还天天跟人扯皮，是不是感觉被坑了？">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/dlkB7EyVSPJLXcv.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/i4hyOxqlYApRkJF.png">
+<meta property="og:updated_time" content="2020-02-02T15:42:16.692Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="互联网产品经理能力图谱">
+<meta name="twitter:description" content="最近有大四的师弟师妹问我，产品经理是什么？产品经理是不是只需要画画原型、开开会就可以了？ 产品经理对自己的能力有什么要求？  相信很多人是因为看了苏杰的那本《人人都是产品经理》而选择产品经理这条路，被书名震撼并深信不疑，然后就屁颠屁颠的去当“经理”了，接着发现压根不是经理，更像是打杂，还天天跟人扯皮，是不是感觉被坑了？">
+<meta name="twitter:image" content="https://i.loli.net/2020/02/02/dlkB7EyVSPJLXcv.jpg">
+  <link rel="canonical" href="https://pmhome123.com/互联网产品经理能力图谱">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>互联网产品经理能力图谱 | PMhome123</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">PMhome123</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">产品经理导航之家</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-links">
+      
+    
+
+    <a href="/links/" rel="section"><i class="menu-item-icon fa fa-fw fa-link"></i> <br>产品经理常用网站</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+            
+
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="https://pmhome123.com/互联网产品经理能力图谱.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="PMhome123">
+      <meta itemprop="description" content="PMhome123产品经理导航之家，致力于收集最'产品'资讯，包含干货、资源、常用工具和网站。">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="PMhome123">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">互联网产品经理能力图谱
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-10-12 09:37:57" itemprop="dateCreated datePublished" datetime="2019-10-12T09:37:57+08:00">2019-10-12</time>
+            </span>
+          
+
+          
+            <span class="post-meta-item" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/互联网产品经理能力图谱.html#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/互联网产品经理能力图谱.html" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <blockquote>
+<p>最近有大四的师弟师妹问我，产品经理是什么？产品经理是不是只需要画画原型、开开会就可以了？ 产品经理对自己的能力有什么要求？</p>
+</blockquote>
+<p>相信很多人是因为看了苏杰的那本《人人都是产品经理》而选择产品经理这条路，被书名震撼并深信不疑，然后就屁颠屁颠的去当“经理”了，接着发现压根不是经理，更像是打杂，还天天跟人扯皮，是不是感觉被坑了？</p>
+<a id="more"></a>
+<p>其实很多人可能对产品经理这个头衔产生了误解，对产品经理的职责理解不准确，也不知道需要什么能力才能当产品经理，所以萌发了我写这篇文章的想法，希望可以对想入门产品经理的人有所帮助。</p>
+<h3 id="产品经理是什么"><a href="#产品经理是什么" class="headerlink" title="产品经理是什么"></a>产品经理是什么</h3><p>产品经理是一个综合岗位，会直接面对用户、产品研发、老板、其他部门，所以，而每个角色对于产品经理的理解也不一样。因此，我想从这四个角度去定义产品经理，其实也是产品经理应该具备的四种思维模式。</p>
+<h4 id="用户"><a href="#用户" class="headerlink" title="用户"></a>用户</h4><p>产品经理应该对用户非常了解，一方面是指有明确的用户画像，根据画像分析对应的需求。对用户非常了解这还意味着对行业、产品和竞品非常熟悉，能够在跟用户聊天的时候迅速Get到他的点。</p>
+<p>另一方面是指，能够以用户思维分析需求。置身于场景中，理解用户的问题和背后的<strong>真正需求</strong>，并挖掘需求是产品经理最基本的能力。</p>
+<p><img src="https://i.loli.net/2020/02/02/dlkB7EyVSPJLXcv.jpg" alt="需求分析.jpg"></p>
+<p>打个比方，晚上下班回家路上，女朋友突然发微信说：</p>
+<blockquote>
+<p>我想吃东西。你随便买点东西回来吧。</p>
+</blockquote>
+<p>我此时会心想：她是不是又没吃晚饭？她到底想吃啥？接下来是思考决策过程：</p>
+<ul>
+<li>她的问题是什么？——没吃晚饭，肚子很饿</li>
+<li>我能给什么？ ——我现在已经快到家了，但好在附近吃的东西很多，所以我能买水果、串串、螺蛳粉、煲仔饭、卤味鸭脖、香肠、麻辣烫、手抓饼等。</li>
+<li>成本需要控制。——虽然这些东西她都挺喜欢吃，但不能全都买，而且她也吃不完。所以需要选出最佳组合。</li>
+<li>需求分析与最佳组合。——她工作一天累了，需要补充大量维生素，火龙果和柑橘都是她喜欢吃的，购买√；她喜欢香辣口味，而且好几次路过香肠摊都吵着说要买烤香肠+烤面筋，购买√；接下来是主食，结合排队时长、打包速度等，手抓饼和串串是最快的，但这几天她肠胃还是有点脆弱，冷锅串串偏麻辣生冷，不适合×；手抓饼加辣椒酱是符合她口味的，购买√。所以，<strong>最佳组合</strong>是：【火龙果、柑橘】+【烤香肠、烤面筋】+【手抓饼】。</li>
+<li>实施并验证。——回到家，当看到她脸上露出笑容，还带点惊喜的时候，我就知道我买对了。</li>
+</ul>
+<p>以<strong>用户的思维</strong>去分析，用户为什么需要产品？产品对于他的作用（价值）？为什么（不）选择竞品？问题虽然简单，却直接说明了产品的价值。</p>
+<h4 id="研发"><a href="#研发" class="headerlink" title="研发"></a>研发</h4><p>按照现在互联网上的共识，研发和产品经理就是水火不相容、每天掐架… 研发怪产品经理整天提“假需求”，导致他们“返工”、加班；产品经理怪研发理解需求能力差、总是拖“工期”、bug太多。</p>
+<p>产品经理于研发的定义，则比较复杂，一方面研发希望你是“客户代言人”与方案设计专家，另一方面，他们会希望你能理解基本技术原理和实现难度。</p>
+<p>所以，跟研发人员沟通时，一个严谨、认真的工科思维是非常重要的。包括：</p>
+<ul>
+<li>严谨、细致的需求文档。不仅需要阐明业务背景，还需要把用户场景、逻辑流程、异常情况、边界条件和交互方式写清楚，这是基本功，也是必要的。 </li>
+<li>了解研发使用的技术栈。产品经理对于需求开发过程中关联的技术原理比较熟悉的话，不仅更方便的跟研发沟通，也能正确的预估需求实现难度。</li>
+<li>减少主观猜想，坚持用数据说话，坚持客观事实</li>
+</ul>
+<p>我认为，一个严谨、认真和理性的产品经理不会忙于每天跟研发掐架，认真做产品才是正事。</p>
+<h4 id="老板"><a href="#老板" class="headerlink" title="老板"></a>老板</h4><p>老板对于产品经理的一般定位是产品负责人，负责整个产品，也叫Product Owner。他期望产品经理不仅能把产品顺利开发出来，还能给公司带来营收。所以，这要求产品经理：</p>
+<ul>
+<li>能够懂一些市场运营方法和商业模型，不仅负责产品的孕育，还要负责产品的成长和成熟。</li>
+<li>在公司角度去思考产品的定位，以及将来的规划，因为影响着个人和团队在公司的发展。</li>
+<li>对于高级产品经理，还要承担团队人才梯队建设，培养潜力新人。</li>
+</ul>
+<p>与老板汇报工作，核心思想是：<strong>关注结果</strong>。 产品的研发固然重要，但是你更要关心产品带来的转化。</p>
+<h4 id="其他部门"><a href="#其他部门" class="headerlink" title="其他部门"></a>其他部门</h4><p>在互联网公司，产品经理所在部门一般是研发部门，负责公司产品的设计和开发，其他部门则包括行政、运营、市场、客服等。</p>
+<p>在其他部门眼中，产品经理就是研发部门的接口人，通过产品经理能知道产品研发进度、迭代计划和功能介绍等，因为他们认为产品经理就是<strong>最熟悉产品的人</strong>。同时，其他部门的同事随着产品迭代发展，会有越来越多的营销和运营需求，他们也会找你提需求，因为产品经理是他们的<strong>需求收集和资源整合人</strong>。</p>
+<p>在与跨部门交流过程中，有几点需要注意：</p>
+<ul>
+<li>跨部门收集需求时，最好规范需求收集表格式，并定期收集需求，形成一个标准流程，利于需求排期。</li>
+<li>跨部门沟通交流，约定每个部门设置部门接口人，有助于收集信息和同步信息。</li>
+<li>界定部门职责，遇到不明确职责的事情，最好有邮件沟通记录，或上级领导意见。</li>
+<li>明确需求优先级和重要程度，以及需求开发带来的效益。</li>
+<li>对于重要协同的任务，需要制定计划、跟进人和时间节点，每天同步进度。</li>
+</ul>
+<p>跟其他部门协作过程中，可以了解到市场状况和营销手段，对于产品设计改进也有重要的帮助。</p>
+<h3 id="产品经理能力图谱"><a href="#产品经理能力图谱" class="headerlink" title="产品经理能力图谱"></a>产品经理能力图谱</h3><p>上面说了很多，我整理了一张互联网产品经理的能力图谱，希望能帮到一些人。 :)<br><img src="https://i.loli.net/2020/02/02/i4hyOxqlYApRkJF.png" alt="能力图谱.png"></p>
+
+    </div>
+
+    
+    
+    
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
+  <img id="wechat_subscriber_qcode" src="https://i.loli.net/2020/03/11/Du2c6LHQasnNf58.jpg" alt="PMhome123 wechat" style="width: 200px; max-width: 100%;">
+  <div></div>
+</div>
+
+      
+        
+      
+
+      <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/读书不二.html" rel="next" title="读书不二">
+                  <i class="fa fa-chevron-left"></i> 读书不二
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/怎么辨别健康新闻的真伪.html" rel="prev" title="【转】怎么辨别健康新闻的真伪">
+                  【转】怎么辨别健康新闻的真伪 <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+    
+    <div class="comments" id="comments"></div>
+  
+
+        </div>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+        
+        
+        
+        
+      
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#产品经理是什么"><span class="nav-number">1.</span> <span class="nav-text">产品经理是什么</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#用户"><span class="nav-number">1.1.</span> <span class="nav-text">用户</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#研发"><span class="nav-number">1.2.</span> <span class="nav-text">研发</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#老板"><span class="nav-number">1.3.</span> <span class="nav-text">老板</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其他部门"><span class="nav-number">1.4.</span> <span class="nav-text">其他部门</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#产品经理能力图谱"><span class="nav-number">2.</span> <span class="nav-text">产品经理能力图谱</span></a></li></ol></div>
+        
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="/images/avatar.jpg"
+      alt="PMhome123">
+  <p class="site-author-name" itemprop="name">PMhome123</p>
+  <div class="site-description" itemprop="description">PMhome123产品经理导航之家，致力于收集最'产品'资讯，包含干货、资源、常用工具和网站。</div>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="mailto:1031610762@qq.com" title="E-Mail &rarr; mailto:1031610762@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+    
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">jinhaoxu</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.4.0</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+
+
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
+<script src="/js/schemes/pisces.js?v=7.4.0"></script>
+<script src="/js/next-boot.js?v=7.4.0"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.getScript('https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js', () => {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(item => {
+    return GUEST.includes(item);
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: true,
+    appId: 'h9RBuyXh5YEPKH0bbM9vmmKK-gzGzoHsz',
+    appKey: 'qlOOrKRLtNrHXsn7KvG56Tvm',
+    placeholder: '在这里输入评论内容，请尽量让您的评论对别人有帮助',
+    avatar: 'retro',
+    meta: guest,
+    pageSize: '15' || 10,
+    visitor: false,
+    lang: 'zh-cn' || 'zh-cn',
+    path: location.pathname
+  });
+}, window.Valine);
+</script>
+
+</body>
+</html>
