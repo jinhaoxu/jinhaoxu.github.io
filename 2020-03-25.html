@@ -54,7 +54,21 @@
     },
     sidebarPadding: 40
   };
+
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
+
 
   <meta name="description" content="在快节奏生活中，保持“韧性、灵活”才能更好的生存。 地铁因为疫情防控要逐个检查乘车码、排队时间大大增加，换个没那么多人的地铁口进站，或者早起一点可以避免上班迟到；骑车上班的路多了很多骑单车的人，平时靠地图导航走的大道也变得拥堵，偶然发现的一条小路比地图导航更快且少人… 惯性思维让人们都习惯于往常，不愿变化。但在对待一些重要且不容犯错的事情上，最好常备Plan B，降低遭遇突变带来的损失。">
 <meta name="keywords" content="韧性, 灵活">

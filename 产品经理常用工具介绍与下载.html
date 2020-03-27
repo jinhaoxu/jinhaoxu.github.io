@@ -54,7 +54,21 @@
     },
     sidebarPadding: 40
   };
+
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
+
 
   <meta name="description" content="产品经理是一个综合职能的岗位，日常用到的工具挺多，这里整理了一些的日常用到的好用的工具，推荐给大家。">
 <meta name="keywords" content="工具">

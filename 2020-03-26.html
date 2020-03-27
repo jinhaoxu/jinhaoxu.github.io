@@ -54,7 +54,21 @@
     },
     sidebarPadding: 40
   };
+
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
+
 
   <meta name="description" content="越是在生死存亡时刻，就越可能放手一搏。企业和人都一样。年后复工回来，公司一边优化组织和人员，一边追求产品增长。旁人看到这情型估计就会觉得疑惑，企业追求增长，业务扩大，不是应该需要更多的人手吗？这其实也是很多企业的无奈，一方面活不下去了，需要节流，另一方面又要增加现金收入，需要开源。但是在如此惨淡、低迷的市场环境下，留给企业增长的空间还能有多少，企业自己也不知道，只能死马当活马医。">
 <meta name="keywords" content="中小企业，增长">

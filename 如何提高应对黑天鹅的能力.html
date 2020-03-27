@@ -54,7 +54,21 @@
     },
     sidebarPadding: 40
   };
+
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
+
 
   <meta name="description" content="典故 在18世纪欧洲人发现澳洲之前，由于他们所见过的天鹅都是白色的，所以在当时欧洲人眼中，天鹅只有白色的品种。直到欧洲人发现了澳洲，看到当地的黑天鹅后，人们认识天鹅的视野才打开，只需一个黑天鹅的观察结果就能使从无数次对白天鹅的观察中推理出的一般结论失效，引起了人们对认知的反思－以往认为对的不等于以后总是对的。“黑天鹅”隐喻那些意外事件：它们极为罕见，在通常的预期之外，在发生前，没有任何前例可以证明">
 <meta name="keywords" content="思维">

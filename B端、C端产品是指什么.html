@@ -54,7 +54,21 @@
     },
     sidebarPadding: 40
   };
+
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
+
 
   <meta name="description" content="什么是C端产品C端产品也叫2C（to Customer)产品，是面向终端用户或消费者的产品，往往承担引流和转化的任务；C端产品是企业与消费者之间的重要媒介，也是企业重要的获客手段之一。">
 <meta name="keywords" content="学习总结">

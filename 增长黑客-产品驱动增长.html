@@ -54,7 +54,21 @@
     },
     sidebarPadding: 40
   };
+
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
+
 
   <meta name="description" content="产品在经历一段时间稳定发展后会进入稳定期，出现“用户新增引擎动力不足”、“新增用户成本高”、“用户可选择竞品越来越多”等问题，那如何让产品焕发新生、让“用户新增引擎”加满油呢？ 一、转向产品型驱动增长的背景销售型驱动增长大型SAAS软件诸如Salesforce、Workday、金蝶、用友等，由于系统功能成熟、复杂，面向大型企业客户，付费能力强，客单价高，需要售前团队沟通需求和提供解决方案，所以它">
 <meta name="keywords" content="工作总结">

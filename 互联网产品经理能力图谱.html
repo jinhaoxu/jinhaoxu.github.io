@@ -54,7 +54,21 @@
     },
     sidebarPadding: 40
   };
+
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
+
 
   <meta name="description" content="最近有大四的师弟师妹问我，产品经理是什么？产品经理是不是只需要画画原型、开开会就可以了？ 产品经理对自己的能力有什么要求？  相信很多人是因为看了苏杰的那本《人人都是产品经理》而选择产品经理这条路，被书名震撼并深信不疑，然后就屁颠屁颠的去当“经理”了，接着发现压根不是经理，更像是打杂，还天天跟人扯皮，是不是感觉被坑了？">
 <meta name="keywords" content="工作总结">

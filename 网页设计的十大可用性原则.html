@@ -54,7 +54,21 @@
     },
     sidebarPadding: 40
   };
+
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
+
 
   <meta name="description" content="记录一下最近从书上看到 网页设计的十大可用性原则。虽然前两年也已经看过，而且在工作中也实践过，但是这次更系统的学习可以温故知新。  1.“反馈原则”（Visibility of system status）“系统应该在合理的时间、用正确的方式，向用户提示或反馈目前系统在做什么、发生了什么。”">
 <meta name="keywords" content="工作总结, 交互设计">

@@ -54,7 +54,21 @@
     },
     sidebarPadding: 40
   };
+
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
+
 
   <meta name="description" content="产品经理在调研用户需求时，会经常用到问卷调查。问卷调查可以快速的收集大量的客户信息和诉求，经过筛选和分析可以得出一些结论。但是设计问卷也是一门技术活，你知道怎么设计一份好的问卷吗？ 下面是我做用户调研半年多总结的一些经验。">
 <meta name="keywords" content="工作总结">

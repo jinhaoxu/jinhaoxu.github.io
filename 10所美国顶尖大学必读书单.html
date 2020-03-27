@@ -54,7 +54,21 @@
     },
     sidebarPadding: 40
   };
+
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
+
 
   <meta name="description" content="为什么要看美国人的书单美国学生的思辨性、创造力，对哲学、历史和社会科学的了解远超过中国学生，我认为一个大学生在学习专业知识的同时，也要对哲学、历史和社会科学等学科知识有所了解，对于塑造一个人的世界观和社会常识有非常大的帮助，而且人文类学科不仅能提升涵养，也能使人拥有不止一种思维模型，这对于思考问题和解决问题时更有帮助。">
 <meta name="keywords" content="工具">

@@ -54,7 +54,21 @@
     },
     sidebarPadding: 40
   };
+
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
+
 
   <meta name="description" content="工作中总结的一些指导原则，希望对大家有点帮助。 :)你先是用户，然后才是PM两个方面，一是，用户思维能让你设计出更符合需求的功能，二是，在相同的场景下，更能理解用户问题。 理性提出需求需求要有充分的理由，包括数据支撑、调研报告等。 产品是给用户减少问题、解决问题，而不是增加负担帮助用户解决问题、提高效率是产品的价值点。">
 <meta name="keywords" content="工作总结">

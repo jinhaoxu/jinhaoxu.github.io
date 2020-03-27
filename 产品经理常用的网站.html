@@ -54,7 +54,21 @@
     },
     sidebarPadding: 40
   };
+
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
+
 
   <meta name="description" content="作为一个产品经理，经常逛一些内容好的网站，或使用一些效率高的工具，往往能够少走很多弯路，成长更快一点。为此，我整理了一些互联网产品经理常用的一些网站。 1.产品社区类人人都是产品经理 最活跃的产品经理交流社区">
 <meta name="keywords" content="工具">

@@ -54,7 +54,21 @@
     },
     sidebarPadding: 40
   };
+
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
+
 
   <meta name="description" content="谁不想知道一天中的第二杯或者第三杯咖啡是否会提高记忆力？或者睡太多是否会增加心脏病的风险？ 我们寄希望于保持健康，而且许多人都喜欢了解新的研究发现，以理解更好的生活方式选择。 但不是所有研究都是平等的，也不是所有研究发现能够以相同的方式解释。不是所有媒体的头条都能够反映出实际研究或者发现的内容。">
 <meta name="keywords" content="思维">

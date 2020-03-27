@@ -54,7 +54,21 @@
     },
     sidebarPadding: 40
   };
+
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
+
 
   <meta name="description" content="最近这几年“新零售”这个概念被炒得很火，零售行业衍生了很多新的“生财之道”，因为我自己在电商领域工作，所以写一下我这两年对于新零售的理解。“新零售”这个概念的提出不是空穴来风，有它的政策背景。 2016 年11月11日，国务院办公厅印发《关于推动实体零售创新转型的意见》（国办发〔2016〕78 号），明确了推动我国实体零售创新转型的指导思想和基本原则。">
 <meta name="keywords" content="工作总结">

@@ -54,7 +54,21 @@
     },
     sidebarPadding: 40
   };
+
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
+
 
   <meta name="description" content="互联网时代，论坛、博客或社交软件上每天都会有人提出问题，社区或社群上每天也有热心人士回答这些问题，与此同时，他们的“对话内容”也会被搜索同类问题的人看到。 但这些问题描述是否准确？是否真的能让人理解它的真正目的？其实，这些问题中，充斥着大量的“垃圾问题”。 这些“垃圾问题”不仅让解答者无从下手，也无法解决提问者的真正疑惑，带给其他人的信息也很有限。">
 <meta name="keywords" content="思维">
