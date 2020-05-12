@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="google-site-verification" content="a8lqKpmgYvW_al-yPTUv8vAfcPIhnXtiIuV7axp82Iw" />
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-32x32.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=7.4.0">
+  <link rel="mask-icon" href="/images/favicon-32x32.png?v=7.4.0" color="#222">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.0">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.4.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"remove","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+
+  <meta name="description" content="后台产品经理在工作中常常会遇到表格，表格的合理设计才能给用户带来更高的获取信息的效率、更快捷的计算。所以本文就总结了一些表格设计的方法。 表格长啥样首先，我们先来看看一般的表格是长什么样的。表格主要分为五大区域，分别是： 筛选区：主要负责筛选和搜索。 操作区：是指针对表格整体进行的操作。 表头：主要包括标题，排序功能等。 正文：数据展示区域。 底栏：主要用于统计数据总条数和记录当前位置。">
+<meta name="keywords" content="工作总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="表格设计的那些事儿">
+<meta property="og:url" content="https://pmhome123.com/表格设计的那些事儿.html">
+<meta property="og:site_name" content="PMhome123">
+<meta property="og:description" content="后台产品经理在工作中常常会遇到表格，表格的合理设计才能给用户带来更高的获取信息的效率、更快捷的计算。所以本文就总结了一些表格设计的方法。 表格长啥样首先，我们先来看看一般的表格是长什么样的。表格主要分为五大区域，分别是： 筛选区：主要负责筛选和搜索。 操作区：是指针对表格整体进行的操作。 表头：主要包括标题，排序功能等。 正文：数据展示区域。 底栏：主要用于统计数据总条数和记录当前位置。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/Z3eSkAK9sPocEbM.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/GDqbruQlFeNZknj.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/matPzvyLCbwc92f.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/ogGa9cQvOXZ4Dfq.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/sEkhvOeWIp3ZJTd.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/SImsKvF9Dzpj1lo.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/eBVJkxQyIcUnPaD.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/EDtF3Rq8KuXZ2nT.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/ISEMomVKyqY18ti.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/gDkqHSjh137c96m.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/lBRiZ1uFtTHec3X.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/scVjlZFBKmdEkpU.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/N4amkH3KgLxyUcX.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/K9n2xZWtTyCzeNF.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/ZX8VstbrQIPK2Nf.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/qIl1swphS265zB3.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/43HIBndFsz8WQCq.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/1BJKtUmRwofq3y4.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/JpIeQ8RMlcKvYW6.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/WOyN9kv15pQTCw7.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/7RcXzxJPyH3T6NE.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/02/rDvVMuZY45l8WzX.png">
+<meta property="og:updated_time" content="2020-05-12T07:05:45.731Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="表格设计的那些事儿">
+<meta name="twitter:description" content="后台产品经理在工作中常常会遇到表格，表格的合理设计才能给用户带来更高的获取信息的效率、更快捷的计算。所以本文就总结了一些表格设计的方法。 表格长啥样首先，我们先来看看一般的表格是长什么样的。表格主要分为五大区域，分别是： 筛选区：主要负责筛选和搜索。 操作区：是指针对表格整体进行的操作。 表头：主要包括标题，排序功能等。 正文：数据展示区域。 底栏：主要用于统计数据总条数和记录当前位置。">
+<meta name="twitter:image" content="https://i.loli.net/2020/02/02/Z3eSkAK9sPocEbM.png">
+  <link rel="canonical" href="https://pmhome123.com/表格设计的那些事儿">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>表格设计的那些事儿 | PMhome123</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">PMhome123</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section">首页</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-links">
+
+    <a href="/links/" rel="section">产品经理常用网站</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section">标签</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section">分类</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+            
+
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="https://pmhome123.com/表格设计的那些事儿.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="PMhome123">
+      <meta itemprop="description" content="PMhome123产品经理导航之家，致力于收集最'产品'资讯，包含干货、资源、常用工具和网站。">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="PMhome123">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">表格设计的那些事儿
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2020-01-21 14:27:28" itemprop="dateCreated datePublished" datetime="2020-01-21T14:27:28+08:00">2020-01-21</time>
+            </span>
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/PM/" itemprop="url" rel="index"><span itemprop="name">PM</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <blockquote>
+<p>后台产品经理在工作中常常会遇到表格，表格的合理设计才能给用户带来更高的获取信息的效率、更快捷的计算。所以本文就总结了一些表格设计的方法。</p>
+</blockquote><h5 id="表格长啥样"><a href="#表格长啥样" class="headerlink" title="表格长啥样"></a>表格长啥样</h5><p>首先，我们先来看看一般的表格是长什么样的。</p><p><img src="https://i.loli.net/2020/02/02/Z3eSkAK9sPocEbM.png" alt="表格1.png"></p><p>表格主要分为<strong>五大区域</strong>，分别是：</p><ul>
+<li>筛选区：主要负责筛选和搜索。</li>
+<li>操作区：是指针对表格整体进行的操作。</li>
+<li>表头：主要包括标题，排序功能等。</li>
+<li>正文：数据展示区域。</li>
+<li>底栏：主要用于统计数据总条数和记录当前位置。</li>
+</ul><a id="more"></a>
+
+
+
+
+<p>下面我对表格的各个区域进行说明。</p>
+<h5 id="筛选区"><a href="#筛选区" class="headerlink" title="筛选区"></a>筛选区</h5><p><img src="https://i.loli.net/2020/02/02/GDqbruQlFeNZknj.png" alt="筛选区.png"></p>
+<p>筛选区主要的功能是筛选和搜索，表格数据类型多于两种时，就需要筛选功能了。合理设计筛选区可以大大提高用户的效率。设计筛选区时，应该考虑如下几点。</p>
+<ul>
+<li>手动查询还是自动查询</li>
+</ul>
+<p>如果常用的查询条件是组合几个条件，那么这种情况下，一般是填好全部条件再让用户点击查询按钮。因为如果用户要查询的某类个体具有多个属性，组合条件的查询显然是更合理的。如下图所示</p>
+<p>如果筛选操作通常是单个条件独立查询，各个筛选条件都是相互独立的，那么一般设计是填好一个条件便自动查询。如下图所示</p>
+<p><img src="https://i.loli.net/2020/02/02/matPzvyLCbwc92f.png" alt="单选框OR下拉框.png"></p>
+<ul>
+<li>单选框or下拉框？</li>
+</ul>
+<p>筛选条件有些需要汇总数据的，有些只需看单一条件下的数据。</p>
+<p>比如状态包含“已开启、已暂停和已归档”，除了需要统计各状态的数据，还需汇总数据，此时则是做成单选框比较好，如下图所示。</p>
+<p><img src="https://i.loli.net/2020/02/02/ogGa9cQvOXZ4Dfq.png" alt="手动查询OR自动查询.png"></p>
+<p>如果不需要汇总数据，则可以是下拉框或者Tab显示，如下图。这里有个小Tip，如果筛选值少于5个，则一般是Tab显示；多于5个，则是下拉框比较好；如果多于10个，那么下拉框最好也加上搜索功能。</p>
+<p><img src="https://i.loli.net/2020/02/02/sEkhvOeWIp3ZJTd.png" alt="tab切换.png"></p>
+<ul>
+<li>关于常用组合</li>
+</ul>
+<p>如果用户的筛选条件比较复杂，而且条件的值比较固定时，则可以考虑添加常用组合功能。常用组合筛选主要帮助用户解决繁琐的输入问题，可以快捷的进行查询。</p>
+<p>用户可以通过点击常用组合，自动生成筛选条件，自动查询。如果要添加条件组合，可以通过保存当前的搜索条件实现。复杂的条件筛选时，还需要添加重置按钮，允许用户一次清除所有筛选条件。如下图。</p>
+<p><img src="https://i.loli.net/2020/02/02/SImsKvF9Dzpj1lo.png" alt="常用组合.png"></p>
+<ul>
+<li>模糊搜索还是精确搜索</li>
+</ul>
+<p>这里的模糊搜索是指根据用户输入的字符，模糊匹配数据。比如说，SKU编码输入“1234”，则系统需要搜出SKU编码中包含“1234”，诸如“K123402、K123403、L123401”等等；如果要完全匹配“1234”，那则是精确匹配。</p>
+<p>模糊匹配一般用于标题、自定义的字符串，筛选出相似结果的场景，因为用户对于自定义的字符串不会记得那么清楚，模糊匹配会更加方便。</p>
+<p>所以，精确匹配一般用于标准编码、唯一标识的字符串，筛选出精确结果的场景。比如，商品ID，广告关键词等，因为用户只需要关心的是精确匹配的结果。</p>
+<h5 id="表格操作区"><a href="#表格操作区" class="headerlink" title="表格操作区"></a>表格操作区</h5><p>表格操作区主要承载对表格的功能操作，比如增删改查或者表格结构的修改，如下图。</p>
+<p><img src="https://i.loli.net/2020/02/02/eBVJkxQyIcUnPaD.png" alt="表格操作区.png"></p>
+<p>一般来说，<strong>功能操作是遵从连续性原则</strong>，使整个操作过程流畅，符合逻辑。比如“批量操作”是位于复选框上方，是为了让用户勾选完后，很自然的移到上方继续操作；另外，重要的操作最好用颜色加以区分，并设置在视线容易抵达处，比如“新建Campaign”是核心功能，所以用橙色标识，并放在左边，用户一打开页面，视线很容易便落到该处。</p>
+<h5 id="表格标题区"><a href="#表格标题区" class="headerlink" title="表格标题区"></a>表格标题区</h5><p>表格标题区也叫表头，主要包括字段名称、排序、伸展表格等功能。表头的重要作用之一就是对数据进行解释，所以表头的信息传递要清晰准确。</p>
+<ul>
+<li>字段名称</li>
+</ul>
+<p>表头的字段名称应当符合用户思维习惯，保证用户理解。如果有需要解释，则在字段名称旁边加以说明。</p>
+<p><img src="https://i.loli.net/2020/02/02/EDtF3Rq8KuXZ2nT.jpg" alt="表格标题.jpg"></p>
+<p>一般来说，字段不超过10个的时候，可以在一屏显示完全；当字段大于10个时，则建议使用自定义列功能。如非必要，不建议设计左右滚动，列表的作用滚动对于用户来讲，体验不好，操作也不方便。</p>
+<p>在自定义列设置时，可以根据字段的属性进行分类，用户检索信息效率更高。</p>
+<p><img src="https://i.loli.net/2020/02/02/ISEMomVKyqY18ti.png" alt="列属性分类.png"></p>
+<ul>
+<li>排序<br>排序是一个非常重要的功能，如何从海量数据中筛选出符合要求的数据，排序是一个必不可缺的步骤。产品经理前期可收集用户需求，得知哪些字段需要排序。</li>
+</ul>
+<p><img src="https://i.loli.net/2020/02/02/gDkqHSjh137c96m.png" alt="排序.png"></p>
+<ul>
+<li>表头固定的情况<br>随着表格的行和列都增加，这时候用户的瞬时记忆会遭遇阈限，根据7±2的原则，超过这个范围时，用户需要增加工具来帮助浏览表格内的数据，不然一滚动，用户都不知道这列数据代表什么。此时固定表头是一个很好的方法。</li>
+</ul>
+<p><img src="https://i.loli.net/2020/02/02/lBRiZ1uFtTHec3X.png" alt="表头固定.png"></p>
+<h5 id="表格正文"><a href="#表格正文" class="headerlink" title="表格正文"></a>表格正文</h5><p>表格正文需要注意的点比较多，包括：<strong>对齐，分割，行高，信息完整，行内操作，空白单元格，汇总计算，高亮与提示，信息层级</strong>等。下面一一说明。</p>
+<ul>
+<li>对齐</li>
+</ul>
+<p>对齐的数据能大大提高浏览效率，人的视线也比较顺畅自然。一般来说，文字靠左对齐，符合人的阅读习惯；数字靠右对齐，方便比较大小；对于固定长度的按钮或文字，一般可以居中对齐。</p>
+<p><img src="https://i.loli.net/2020/02/02/scVjlZFBKmdEkpU.png" alt="内容对齐.png"></p>
+<ul>
+<li>分割</li>
+</ul>
+<p>正确使用斑马线和鼠标悬停高亮底色可以很好的引导用户浏览数据，避免出现错行、迷失的情况。<br>斑马线是帮助用户区分行与行之间的数据，避免混淆；鼠标悬停高亮底色是用户交互时的辅助工具，辅助用户明确数据所在行。</p>
+<p><img src="https://i.loli.net/2020/02/02/N4amkH3KgLxyUcX.png" alt="斑马线.png"></p>
+<ul>
+<li>行高</li>
+</ul>
+<p>正文的行高也是重要参数之一，如果强调在一屏尽可能显示多一点数据的话，行高可以设置小一点；如果强调行内信息比较多的话，行高可以设置大一点。</p>
+<p><img src="https://i.loli.net/2020/02/02/K9n2xZWtTyCzeNF.png" alt="行高.png"></p>
+<ul>
+<li>信息完整</li>
+</ul>
+<p>由于表格宽度有限，有些字段的数据比较长时，会无法完整显示在表格内，此时需要省略部分信息，用户鼠标悬停时可以查看完整信息。</p>
+<p><img src="https://i.loli.net/2020/02/02/ZX8VstbrQIPK2Nf.png" alt="信息完整.png"></p>
+<ul>
+<li>行内操作</li>
+</ul>
+<p>行内操作对比弹窗编辑或新打开标签页编辑有非常高的效率，所以对于频繁修改的数据，建议使用行内编辑。</p>
+<p>编辑的内容比较少时，可以直接编辑修改，如下图。</p>
+<p><img src="https://i.loli.net/2020/02/02/qIl1swphS265zB3.png" alt="行内操作.png"></p>
+<p>如果需要同时编辑的内容比较多时，为提高效率，可以采用批量填写再保存，如下图。</p>
+<p><img src="https://i.loli.net/2020/02/02/43HIBndFsz8WQCq.png" alt="批量编辑.png"></p>
+<ul>
+<li>空白单元格</li>
+</ul>
+<p>最好不要留空白格，会使用户迷惑，是程序出Bug了，还是数据为空。建议产品经理跟开发协商好空数据的显示方式，一般不为了引起歧义，空数据用“-”显示，为零数据使用“0”表示。</p>
+<ul>
+<li>汇总计算</li>
+</ul>
+<p>表格字段多、数据之间需要计算时，为了减少用户心算的负担，应该在表格中帮助用户汇总计算对应的数据。</p>
+<p><img src="https://i.loli.net/2020/02/02/1BJKtUmRwofq3y4.png" alt="汇总计算.png"></p>
+<ul>
+<li>高亮与提示</li>
+</ul>
+<p>对重点信息进行高亮显示，提示用户注意，帮助用户快速找到重点是提高用户体验的手段之一。</p>
+<p><img src="https://i.loli.net/2020/02/02/JpIeQ8RMlcKvYW6.png" alt="高亮.png"></p>
+<ul>
+<li>信息层级</li>
+</ul>
+<p>表格数据有些是具有深度的，可以进行分析的，这类数据的信息层级应该在设计表格的时候体现出来。比如下图中的“花费”，还可以对单条数据的“花费”进行分析，体现了信息的层级。</p>
+<p><img src="https://i.loli.net/2020/02/02/WOyN9kv15pQTCw7.png" alt="信息层级.png"><br><img src="https://i.loli.net/2020/02/02/7RcXzxJPyH3T6NE.png" alt="信息层级2.png"></p>
+<h5 id="底栏"><a href="#底栏" class="headerlink" title="底栏"></a>底栏</h5><p>最后是表格的底栏。底栏也是不可缺少的一部分，承载的作用<strong>主要是告诉用户数据条数以及当前位置。</strong></p>
+<p><img src="https://i.loli.net/2020/02/02/rDvVMuZY45l8WzX.png" alt="底栏.png"></p>
+<p>合理的设置每页的显示条数需要产品经理前期去调研。我们之前做了一个显示店铺所有商品的表格，默认每页显示15条，最多可设置每页显示50条。可是后面用户反馈说，即使每页显示50条也是太少了，因为他的店铺有上千个商品，页数多的话，翻页效率太低了。后面我们改成每页最多可以显示200条，这才算解决他的问题。</p>
+<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><p>至此，关于表格设计就大概讲完了，表格不只是简单的呈现数据，如何设计表格，使表格内容可理解性强、用户浏览效率高也是产品经理需要关心的问题。</p>
+<p>关于表格设计，如果你有更好的建议，欢迎在评论留下你的建议哦~</p>
+
+    </div>
+
+    
+    
+    
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
+  <img id="wechat_subscriber_qcode" src="https://i.loli.net/2020/03/11/Du2c6LHQasnNf58.jpg" alt="PMhome123 wechat" style="width: 200px; max-width: 100%;">
+  <div></div>
+</div>
+
+      
+        
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/工作总结/" rel="tag"># 工作总结</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/B端、C端产品是指什么.html" rel="next" title="B端、C端产品是指什么">
+                  <i class="fa fa-chevron-left"></i> B端、C端产品是指什么
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/产品经理常用的网站.html" rel="prev" title="产品经理常用的网站">
+                  产品经理常用的网站 <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">jinhaoxu</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.4.0</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+
+
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
+<script src="/js/schemes/pisces.js?v=7.4.0"></script>
+<script src="/js/next-boot.js?v=7.4.0"></script>
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
