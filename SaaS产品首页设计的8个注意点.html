@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="google-site-verification" content="a8lqKpmgYvW_al-yPTUv8vAfcPIhnXtiIuV7axp82Iw" />
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-32x32.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=7.4.0">
+  <link rel="mask-icon" href="/images/favicon-32x32.png?v=7.4.0" color="#222">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.0">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.4.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"remove","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+
+  <meta name="description" content="你的SaaS产品首页的用户体验是否良好？它的转化率令你满意吗？">
+<meta name="keywords" content="产品修炼手册">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SaaS产品首页设计的8个注意点">
+<meta property="og:url" content="https://pmhome123.com/SaaS产品首页设计的8个注意点.html">
+<meta property="og:site_name" content="PMhome123">
+<meta property="og:description" content="你的SaaS产品首页的用户体验是否良好？它的转化率令你满意吗？">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.loli.net/2020/06/19/KGeLan1RoBPE2WJ.png">
+<meta property="og:image" content="https://i.loli.net/2020/06/19/xVn21Dw3cTeOjkN.png">
+<meta property="og:image" content="https://i.loli.net/2020/06/19/k7EJ4nUavq1DNog.png">
+<meta property="og:image" content="https://i.loli.net/2020/06/19/atoGBNrhMIqcCYm.png">
+<meta property="og:image" content="https://i.loli.net/2020/06/19/HPaSkYn4Kq1hCxg.png">
+<meta property="og:image" content="https://i.loli.net/2020/06/19/b6KFaB4pNvQO1oH.png">
+<meta property="og:image" content="https://i.loli.net/2020/06/19/3BYzQlScoFpwfP7.png">
+<meta property="og:image" content="https://i.loli.net/2020/06/19/3y5MhIHwLv7TZp6.png">
+<meta property="og:image" content="https://i.loli.net/2020/06/19/UWu7ybeYtTk9OQ3.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/06/19/Dv8iWRGqPIzjpEX.png">
+<meta property="og:image" content="https://i.loli.net/2020/06/19/RBDNezYifSgadAG.png">
+<meta property="og:image" content="https://i.loli.net/2020/06/19/tlOyE6wW3DMVH1z.png">
+<meta property="og:image" content="https://i.loli.net/2020/06/19/EvU6ZSpNrbiaTkR.png">
+<meta property="og:image" content="https://i.loli.net/2020/06/22/ndXgQTu7KJIfva8.png">
+<meta property="og:image" content="https://i.loli.net/2020/06/22/PUB3TiRmY6lxJNX.png">
+<meta property="og:image" content="https://i.loli.net/2020/06/22/JSrn2xHghRo1wU3.png">
+<meta property="og:image" content="https://i.loli.net/2020/06/22/CcDA2Wb1lPj9JTi.png">
+<meta property="og:image" content="https://i.loli.net/2020/06/22/XGwFKif67ZVEg3c.png">
+<meta property="og:updated_time" content="2020-06-22T05:43:18.980Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SaaS产品首页设计的8个注意点">
+<meta name="twitter:description" content="你的SaaS产品首页的用户体验是否良好？它的转化率令你满意吗？">
+<meta name="twitter:image" content="https://i.loli.net/2020/06/19/KGeLan1RoBPE2WJ.png">
+  <link rel="canonical" href="https://pmhome123.com/SaaS产品首页设计的8个注意点">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>SaaS产品首页设计的8个注意点 | PMhome123</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">PMhome123</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section">首页(home)</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section">关于我(about)</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section">标签(tags)</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+            
+
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="https://pmhome123.com/SaaS产品首页设计的8个注意点.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Hank">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="PMhome123">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">SaaS产品首页设计的8个注意点
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于(posted)</span>
+
+              
+                
+              
+
+              <time title="创建时间：2020-06-22 13:42:12" itemprop="dateCreated datePublished" datetime="2020-06-22T13:42:12+08:00">2020-06-22</time>
+            </span>
+          
+
+          
+            <div class="post-description">你的SaaS产品首页的用户体验是否良好？它的转化率令你满意吗？</div>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>产品的首页在获取用户、教育用户、转化用户的过程中扮演着一个非常重要的角色，所有的用户在转化之前，都会来到首页，而首页的作用就是在客户脑海建立产品认知，并留下深刻印象，而一个良好的产品首页可以从以下8个方面进行考虑。</p><ul>
+<li>简练有力的产品价值宣言</li>
+<li>清晰的行动路径（Call To Action）</li>
+<li>合适的注册表单页面</li>
+<li>页面菜单结构清晰，易于导航</li>
+<li>易于获取的客服支持</li>
+<li>易于理解的产品核心亮点与价值</li>
+<li>具有说服力的客户案例或品牌为产品背书</li>
+<li>支持产品演示或预览</li>
+</ul><a id="more"></a>
+
+<h4 id="1-简练有力的产品价值宣言"><a href="#1-简练有力的产品价值宣言" class="headerlink" title="1.简练有力的产品价值宣言"></a>1.简练有力的产品价值宣言</h4><p>产品价值宣言是让新用户快速Get到你的产品价值：为什么它独一无二？为什么它比竞品更好？用一句话描述清楚，让新用户一看到价值宣言就能被吸引住。</p>
+<p>我们来看看有哪些比较好的例子：</p>
+<p><strong><a href="https://www.dropbox.com/" target="_blank" rel="noopener">Dropbox</a>:</strong><br><br></p>
+<div align="center"><img width="600" src="https://i.loli.net/2020/06/19/KGeLan1RoBPE2WJ.png"></div>
+<br>
+
+<p><strong><a href="https://slack.com/" target="_blank" rel="noopener">Slack</a>:</strong><br><br></p>
+<div align="center"><img width="600" src="https://i.loli.net/2020/06/19/xVn21Dw3cTeOjkN.png"></div>
+<br>
+
+<p><strong><a href="https://www.salesforce.com/cn" target="_blank" rel="noopener">Salesforce</a>:</strong><br><br></p>
+<div align="center"><img width="600" src="https://i.loli.net/2020/06/19/k7EJ4nUavq1DNog.png"></div>
+<br>
+
+<p>在这三个例子中，我更喜欢Salesforce的产品价值宣言，虽然稍长，但是表达出来的价值更清晰易懂，同时也把<strong>产品的优势、定位以及愿景描述完整</strong>。Salsforce不愧是SaaS领域的龙头老大~</p>
+<h4 id="2-清晰的号召性用语（Call-To-Action）"><a href="#2-清晰的号召性用语（Call-To-Action）" class="headerlink" title="2.清晰的号召性用语（Call To Action）####"></a>2.清晰的号召性用语（Call To Action）####</h4><p>SaaS产品首页应该具有清晰的号召性用语（CTA），引导用户进行特定的操作。CTA不宜过多，过多的CTA只会让用户分心，疑惑不知改选择哪个。上面的例子中，我们可以看到Salsforce和Slack是用“Free”或“Started”的字眼吸引用户注册。</p>
+<p>同时，在首页的底部和导航栏再次出现CTA，强化用户的印象，引导他去注册。CTA及其按钮出现三次：产品标语下方、首页底部和导航栏，这就足够了，出现太多次反而会引起用户的不适。就相当于一个导购员在你超市购物时，一直在你耳边说“免费试吃，看一下”…</p>
+<br>
+<div align="center"><img width="600" src="https://i.loli.net/2020/06/19/atoGBNrhMIqcCYm.png"></div>
+<br>
+
+<h4 id="3-合适的注册表单页面"><a href="#3-合适的注册表单页面" class="headerlink" title="3.合适的注册表单页面"></a>3.合适的注册表单页面</h4><p>Slack和Salesforce的注册表单页面是点击试用按钮后打开一个新页面，而Dropbox则是在产品首页便可直接填写信息进行注册。</p>
+<p>说一下我对它们这种设计的理解：Dropbox之所以把注册表单直接展示，是因为它的注册信息非常简单，并且不敏感，所以它有信心这个设计会放大用户注册的动力；</p>
+<br>
+<div align="center"><img width="600" src="https://i.loli.net/2020/06/19/HPaSkYn4Kq1hCxg.png"></div>
+<br>
+
+<p>Salesforce的注册表单信息较多，有些信息还较敏感，如果它一开始就把这些“不足”展示给用户，用户很容易被“吓”跑，所以，Salesforce就把注册表单独立一个页面，这样做还有<strong>另一个好处，就是方便统计游客-注册漏斗流失率和注册跳出率</strong>。</p>
+<br>
+<div align="center"><img width="600" src="https://i.loli.net/2020/06/19/b6KFaB4pNvQO1oH.png"></div>
+<br>
+
+<p>而对于Slack，它的注册流程就比较长，它需要5步，Slack把这5步都单独做成一个页面。</p>
+<br>
+<div align="center"><img width="600" src="https://i.loli.net/2020/06/19/3BYzQlScoFpwfP7.png"></div>
+<div align="center"><img width="600" src="https://i.loli.net/2020/06/19/3y5MhIHwLv7TZp6.png"></div>
+<br>
+
+<p>Slack的注册流程虽然页面跳转有点多，但是<strong>一个页面只专注一件事，操作简单且明确</strong>，用户也不容易分心。</p>
+<h4 id="4-页面菜单结构清晰，易于导航"><a href="#4-页面菜单结构清晰，易于导航" class="headerlink" title="4.页面菜单结构清晰，易于导航"></a>4.页面菜单结构清晰，易于导航</h4><p>首页的内容比较多的时候，就应该把这些内容按分类组织，方便用户索引。用户经常访问的一些优质内容，也将会出现在Google搜索结果里面。<br><br></p>
+<div align="center"><img width="600" src="https://i.loli.net/2020/06/19/UWu7ybeYtTk9OQ3.jpg"></div>
+<div align="center"><img width="600" src="https://i.loli.net/2020/06/19/Dv8iWRGqPIzjpEX.png"></div>
+<br>
+
+<h4 id="5-易于获取的客服支持"><a href="#5-易于获取的客服支持" class="headerlink" title="5.易于获取的客服支持"></a>5.易于获取的客服支持</h4><p>在首页部署实时客服助手可以与网站的用户及时取得联系，有助于流量转化成商机。就像你在服装店看衣服，看到合适的衣服，就想直接跟销售员沟通一样。<br><br></p>
+<div align="center"><img width="600" src="https://i.loli.net/2020/06/19/RBDNezYifSgadAG.png"></div>
+<br>
+现在的实时客服解决方案有很多选择，Intercom、UDESK都能提供很好的服务，可以省去开发成本。
+
+<h4 id="6-易于理解的产品核心亮点与价值"><a href="#6-易于理解的产品核心亮点与价值" class="headerlink" title="6.易于理解的产品核心亮点与价值"></a>6.易于理解的产品核心亮点与价值</h4><p>首页必不可少的是对产品的介绍，除了描述产品的功能和工作机制，最好也描述一下用户可以从这个产品获得什么好处？这个产品将怎么解决他的问题？<br><br></p>
+<div align="center"><img width="600" src="https://i.loli.net/2020/06/19/tlOyE6wW3DMVH1z.png"></div>
+<br>
+Notion的这个图片就很好的说明了它的价值和优势：它可以帮你管理笔记、知识库和项目，还能跨平台同步使用。这就是一张图胜过千言万语。
+
+<p>比图片更好的是视频，一个两三分钟的视频既能让客户完整的看完视频，也能在视频里传递更多的信息。<br><br></p>
+<div align="center"><img width="600" src="https://i.loli.net/2020/06/19/EvU6ZSpNrbiaTkR.png"></div>
+<br>
+
+<h4 id="7-具有说服力的客户案例或品牌为产品背书"><a href="#7-具有说服力的客户案例或品牌为产品背书" class="headerlink" title="7.具有说服力的客户案例或品牌为产品背书"></a>7.具有说服力的客户案例或品牌为产品背书</h4><p>用户在首页浏览产品时，即使已经对产品动心了，但可能还会有疑虑：这个产品的功能靠不靠谱？售后服务怎么样……这个时候，就需要客户案例或其他社会证明为产品的可靠性背书了。</p>
+<p>Slack会包装典型的客户案例，讲述客户的需求场景、产品给客户带来的价值、客户对产品的评价，通过这些案例，用户可以知道Slack针对某个具体场景的解决方案，或某个行业的解决方案，从而判断Slack是否能够满足需求。</p>
+<br>
+<div align="center"><img width="600" src="https://i.loli.net/2020/06/22/ndXgQTu7KJIfva8.png"></div>
+<br>
+<div align="center"><img width="600" src="https://i.loli.net/2020/06/22/PUB3TiRmY6lxJNX.png"></div>
+<br>
+
+<p>类似的除了客户案例和品牌以外，还可以摆上知名平台的软件评分和评价，以增加产品的靠谱度。比如，ZOHO CRM会在首页放上它在APPStore、Google Play等应用商店的平台的软件评分，以及获得的奖项，仿佛在告诉用户：您看看我这些奖状，再看看我这些评分，还不选我就是你的不明智。</p>
+<br>
+<div align="center"><img width="600" src="https://i.loli.net/2020/06/22/JSrn2xHghRo1wU3.png"></div>
+<br>
+
+<h4 id="8-产品演示或预览"><a href="#8-产品演示或预览" class="headerlink" title="8.产品演示或预览"></a>8.产品演示或预览</h4><p>我们去商场买东西时，商家经常会提供体验试用的样品，食品的提供试吃，衣服提供试穿，玩具提供试玩等等，SaaS产品也一样，能够提供试用（demo)环境对用户是具有重要作用的，用户可以免注册直接体验产品的功能。<strong>demo试用对于用户最大的作用是：验证期望</strong>。意思是，你前面把产品的优点说得天花乱坠，我直接进去体验便知真假。</p>
+<br>
+<div align="center"><img width="600" src="https://i.loli.net/2020/06/22/CcDA2Wb1lPj9JTi.png"></div>
+<br>
+<div align="center"><img width="600" src="https://i.loli.net/2020/06/22/XGwFKif67ZVEg3c.png"></div>
+<br>
+
+<p>以上便是关于SaaS产品首页设计的8个注意点。</p>
+
+    </div>
+
+    
+    
+    
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
+  <img id="wechat_subscriber_qcode" src="https://i.loli.net/2020/06/09/JHGFmMOvRZYcx4S.jpg" alt="Hank wechat" style="width: 200px; max-width: 100%;">
+  <div>我的微信公众号</div>
+</div>
+
+      
+        
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/产品修炼手册/" rel="tag"># 产品修炼手册</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/厦门游第二天.html" rel="next" title="厦门游第二天">
+                  <i class="fa fa-chevron-left"></i> 厦门游第二天
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Hank</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+
+
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
+<script src="/js/schemes/pisces.js?v=7.4.0"></script>
+<script src="/js/next-boot.js?v=7.4.0"></script>
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
