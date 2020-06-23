@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="google-site-verification" content="a8lqKpmgYvW_al-yPTUv8vAfcPIhnXtiIuV7axp82Iw" />
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-32x32.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=7.4.0">
+  <link rel="mask-icon" href="/images/favicon-32x32.png?v=7.4.0" color="#222">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.0">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.4.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"remove","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+
+  <meta name="description" content="需求分析前，需要对项目的目标或愿景进行分析，因为它是产品、项目的灵魂，是对于出资人（发起人、属主）而言的价值体现。">
+<meta name="keywords" content="日更">
+<meta property="og:type" content="article">
+<meta property="og:title" content="有效需求分析（一）">
+<meta property="og:url" content="https://pmhome123.com/有效需求分析-一.html">
+<meta property="og:site_name" content="PMhome123">
+<meta property="og:description" content="需求分析前，需要对项目的目标或愿景进行分析，因为它是产品、项目的灵魂，是对于出资人（发起人、属主）而言的价值体现。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-06-23T13:16:55.454Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="有效需求分析（一）">
+<meta name="twitter:description" content="需求分析前，需要对项目的目标或愿景进行分析，因为它是产品、项目的灵魂，是对于出资人（发起人、属主）而言的价值体现。">
+  <link rel="canonical" href="https://pmhome123.com/有效需求分析-一">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>有效需求分析（一） | PMhome123</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">PMhome123</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section">首页(home)</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section">关于我(about)</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section">标签(tags)</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+            
+
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="https://pmhome123.com/有效需求分析-一.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Hank">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="PMhome123">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">有效需求分析（一）
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于(posted)</span>
+
+              
+                
+              
+
+              <time title="创建时间：2020-06-22 20:02:32" itemprop="dateCreated datePublished" datetime="2020-06-22T20:02:32+08:00">2020-06-22</time>
+            </span>
+          
+
+          
+            <div class="post-description">需求分析前，需要对项目的目标或愿景进行分析，因为它是产品、项目的灵魂，是对于出资人（发起人、属主）而言的价值体现。</div>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>产品、项目的目标分析可由四个步骤组成：<strong>访谈问题、研讨机会、定义问题和机会、分析问题并确定解决方案</strong>。</p><p>通过与项目发起人、出资人、项目属主的访谈，了解他们对项目的预期和现状之间的差距，可以定义出系统要解决的“问题”。</p><p>1.在访谈前，根据项目的来源采用不同的策略来收集用户想要解决的“问题”。</p><p>项目来源是内部提出，按类型定分而治之策略：</p><a id="more"></a>
+
+
+
+<ul>
+<li>内部管理系统——职能分解。</li>
+<li>外部服务系统——产品服务分解。</li>
+<li>前两者不吻合——工作主题分解。</li>
+</ul>
+<p>项目来源是外因触发，按触因确定调研策略：</p>
+<ul>
+<li>参观考察——分享收获。</li>
+<li>竞争对手动向——竞品分析。</li>
+<li>热点及新技术趋势——分享理解。</li>
+</ul>
+<p>2.需求=预期-现状。当用户的预期等于现状或低于现状时，我们就需要去挖掘“机会场景”。机会场景的挖掘可以通过<strong>新业务、新技术和新人群</strong>三个角度进行。</p>
+<ul>
+<li>新业务。追标杆，行业标杆在发展过程中有何借鉴点？赛同行，竞争对手有何借鉴点？借他业，其他行业有何借鉴点。</li>
+<li>新技术。新技术能够解决哪些当前无法解决的业务问题？新技术能够带来哪些新机会？当前新技术应用有何借鉴点？</li>
+<li>新人群。客户的决策层、管理者是否出现了新人群？客户员工群体有了什么变化？客户的客户群体有了什么变化？</li>
+</ul>
+<p>3.研讨出机会场景之后，接下来就是清晰地定义它们。定义问题的关键在与准确的描述问题，描述一个问题的关键在于几个要点的把握：业务态、客观性、匹配性。</p>
+<p>业务态是指在给客户推介产品时，一定要从业务的角度阐述问题或机会，而不是从系统的角度来阐述。</p>
+<blockquote>
+<p>例如，“原有的系统经常会出现数据不一致，给管理者带来一些麻烦”，这是一个从系统的角度来阐述的问题。再看看业务态的角度如何阐述问题，“当前各种借助系统生成的业务报表，存在统计口径不一、业务相关数据不一致的现象。”</p>
+</blockquote>
+<p>客观性是指不加入主观猜测，真实还原问题。</p>
+<p>匹配性是指定义的问题的用户视角要与项目的真实客户相匹配。</p>
+<p>描述问题只是第一步，紧接着应该说明这些问题影响了谁，给他们带来了什么样的影响，使故事更加完整。这部分的描述中，可以从三个要点掌握：</p>
+<ul>
+<li>指代清晰，具体到人。直接说明该问题影响了谁，并清晰、具体地列出。</li>
+<li>视觉匹配，影响明确。带来了什么影响，产生了什么样的后果。</li>
+<li>推理合理，层次清晰。描述问题，前因后果需有逻辑关系。</li>
+</ul>
+<p>4.分析问题，提炼解决方案。分三步，第一步分析问题；接着，明确解决方案策略；最后提炼“一句话目标”。</p>
+<p>分析问题可采用：</p>
+<ul>
+<li>鱼骨图法：问题是由一系列子问题构成的，通常用来分拆问题。</li>
+<li>问题现状法：问题是由一系列因果关系产生的。</li>
+<li>系统思考法：问题是由一些列因果关系产生，并包括促进因和阻碍因两种。</li>
+</ul>
+<p>分析完问题后，在描述解决方案时，应该从<strong>宏观角度</strong>说明，并且<strong>强调出具体的策略</strong>，以便客户高层能够理解。</p>
+<p>最后提炼“一句话目标”，其<strong>要点在于业务态、价值态，以“措施+效果”的结构描述</strong>。如：基于安全库存避免物资脱节，为门店扩张奠定后勤基础。</p>
+<blockquote>
+<p>——徐峰《有效需求分析》</p>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
+  <img id="wechat_subscriber_qcode" src="https://i.loli.net/2020/06/09/JHGFmMOvRZYcx4S.jpg" alt="Hank wechat" style="width: 200px; max-width: 100%;">
+  <div>我的微信公众号</div>
+</div>
+
+      
+        
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/日更/" rel="tag"># 日更</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/SaaS产品首页设计的8个注意点.html" rel="next" title="SaaS产品首页设计的8个注意点">
+                  <i class="fa fa-chevron-left"></i> SaaS产品首页设计的8个注意点
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/有效需求分析-二.html" rel="prev" title="有效需求分析(二)">
+                  有效需求分析(二) <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Hank</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+
+
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
+<script src="/js/schemes/pisces.js?v=7.4.0"></script>
+<script src="/js/next-boot.js?v=7.4.0"></script>
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
